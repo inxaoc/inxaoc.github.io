@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+</head>
+<body>
+  <a href="#" id="button-1" class="btn badge-primary">Возврат кода страницы</a>
+  <a href="#" id="button-2" class="btn badge-secondary">Возврат json</a>
+  <div id="response"></div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>    
+</body>
+</html>
+<script>
+  $(document).ready(function() {
+    $('#button-1').on('click', function(e){
+      e.preventDefault();
+      var url = 'https://bobleman.github.io/ajax-1.html';
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(response) {
+            console.log(response);
+          $("#response").append(response);
+        }
+      })
+    })
+
+    $('#button-2').on('click', function(e){
+      e.preventDefault();
+      var url = 'https://bobleman.github.io/ajax-2.html';
+      $.getJSON( url, function( data ) {
+          console.log(data);
+          var a = data["glossary"]["title"]
+          console.log(a);
+          $("#response").append(a);
+      });
+    })
+  });
+</script>
