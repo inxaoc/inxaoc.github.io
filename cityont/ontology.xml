@@ -237,13 +237,8 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cityont#E02_Permit">
-        <rdfs:comment>&lt;h3&gt;Заголово&lt;/h3&gt;
-Како то текст
-&lt;ul&gt;
-&lt;li&gt;пункт 1&lt;/li&gt;
-&lt;li&gt;пункт 1&lt;/li&gt;
-&lt;li&gt;пункт 1&lt;/li&gt;
-&lt;/ul&gt;</rdfs:comment>
+        <rdfs:comment>Какой то коммент
+Какой то 2</rdfs:comment>
         <rdfs:label xml:lang="en">Permit</rdfs:label>
         <rdfs:label xml:lang="ru">Разрешение</rdfs:label>
     </owl:Class>
