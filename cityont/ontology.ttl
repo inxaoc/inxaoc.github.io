@@ -15,6 +15,14 @@
 #    Annotation properties
 #################################################################
 
+###  http://schema.org/creator
+<http://schema.org/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/image
+<http://schema.org/image> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:AnnotationProperty .
 
@@ -120,6 +128,9 @@
 
 ###  https://w3id.org/cityont#E02_Permit
 :E02_Permit rdf:type owl:Class ;
+            <http://schema.org/creator> "Natasha Chichkova" ,
+                                        "Vitaly Vlasov" ;
+            <http://schema.org/image> "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg" ;
             rdfs:label "Разрешение" .
 
 

@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/"
      xmlns:cityont="https://w3id.org/cityont#"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
     <owl:Ontology rdf:about="https://w3id.org/cityont#">
@@ -25,6 +26,20 @@
      -->
 
 
+    
+
+
+    <!-- http://schema.org/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/creator"/>
+    
+
+
+    <!-- http://schema.org/image -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
     
 
 
@@ -222,6 +237,9 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cityont#E02_Permit">
+        <schema:creator>Natasha Chichkova</schema:creator>
+        <schema:creator>Vitaly Vlasov</schema:creator>
+        <schema:image>https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg</schema:image>
         <rdfs:label>Разрешение</rdfs:label>
     </owl:Class>
     

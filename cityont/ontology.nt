@@ -11,6 +11,12 @@
 # #################################################################
 # 
 # 
+# http://schema.org/creator
+<http://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/image
+<http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -121,6 +127,9 @@
 # 
 # https://w3id.org/cityont#E02_Permit
 <https://w3id.org/cityont#E02_Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cityont#E02_Permit> <http://schema.org/creator> "Natasha Chichkova" .
+<https://w3id.org/cityont#E02_Permit> <http://schema.org/creator> "Vitaly Vlasov" .
+<https://w3id.org/cityont#E02_Permit> <http://schema.org/image> "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg" .
 <https://w3id.org/cityont#E02_Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Разрешение" .
 # 
 # https://w3id.org/cityont#E03_ZoneType

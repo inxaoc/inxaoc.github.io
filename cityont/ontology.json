@@ -1,4 +1,10 @@
 [ {
+  "@id" : "http://schema.org/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -110,6 +116,14 @@
 }, {
   "@id" : "https://w3id.org/cityont#E02_Permit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/creator" : [ {
+    "@value" : "Natasha Chichkova"
+  }, {
+    "@value" : "Vitaly Vlasov"
+  } ],
+  "http://schema.org/image" : [ {
+    "@value" : "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Разрешение"
   } ]
