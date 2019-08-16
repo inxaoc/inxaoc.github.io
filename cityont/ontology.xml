@@ -237,8 +237,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cityont#E02_Permit">
-        <schema:creator>Vitaly Vlasov; Natasha Chichkova</schema:creator>
-        <schema:image>https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg</schema:image>
         <rdfs:label xml:lang="en">Permit</rdfs:label>
         <rdfs:label xml:lang="ru">Разрешение</rdfs:label>
     </owl:Class>

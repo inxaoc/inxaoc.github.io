@@ -91,10 +91,10 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "12",
+    "id" : "17",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -285,15 +285,6 @@
         "IRI-based" : "МКМДХГТ_для_остальных_ВИТ"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#МКМДХГТ_площадь_примыкакают_к_проезчасти",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : "Площадь машино-мест для хранения (технологического отстоя) грузового автотранспорта при примыкании участков для стоянки к проезжей части улиц и проездов и продольном расположении автомобилей."
-      },
-      "labels" : {
-        "IRI-based" : "МКМДХГТ_площадь_примыкакают_к_проезчасти"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#МКМДХГТ_площадь_не_примыкакают_к_проезчасти",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -301,6 +292,15 @@
       },
       "labels" : {
         "IRI-based" : "МКМДХГТ_площадь_не_примыкакают_к_проезчасти"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#МКМДХГТ_площадь_примыкакают_к_проезчасти",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Площадь машино-мест для хранения (технологического отстоя) грузового автотранспорта при примыкании участков для стоянки к проезжей части улиц и проездов и продольном расположении автомобилей."
+      },
+      "labels" : {
+        "IRI-based" : "МКМДХГТ_площадь_примыкакают_к_проезчасти"
       }
     } ],
     "comment" : {
@@ -335,15 +335,6 @@
         "IRI-based" : "Разрешение_Т3Ж2_ПРС_МКЭ"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : "Разрешение для участка Т3Ж2.\nПараметр разрешенного строительства: коэффицент использования территории для многоэтажной жилой застройки."
-      },
-      "labels" : {
-        "IRI-based" : "Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_ПРЗУ",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -351,6 +342,15 @@
       },
       "labels" : {
         "IRI-based" : "Разрешение_Т3Ж2_ПРС_ПРЗУ"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Разрешение для участка Т3Ж2.\nПараметр разрешенного строительства: коэффицент использования территории для многоэтажной жилой застройки."
+      },
+      "labels" : {
+        "IRI-based" : "Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ"
       }
     }, {
       "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МОЗ_БП",
@@ -422,15 +422,6 @@
         "IRI-based" : "Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : "Разрешение для участка ТПД2_1.\nПараметр разрешенного строительства:  минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"склады\" (код 6.9)."
-      },
-      "labels" : {
-        "IRI-based" : "Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МВЗКЛ",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -438,6 +429,15 @@
       },
       "labels" : {
         "IRI-based" : "Разрешение_ТПД2_1_ПРС_МВЗКЛ"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Разрешение для участка ТПД2_1.\nПараметр разрешенного строительства:  минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"склады\" (код 6.9)."
+      },
+      "labels" : {
+        "IRI-based" : "Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов"
       }
     }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти",
@@ -517,12 +517,6 @@
         "IRI-based" : "Разрешение_Т3Ж2_ВИТ_ОУ"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПричДМС",
-      "baseIri" : "https://w3id.org/cityont",
-      "labels" : {
-        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_ПричДМС"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ТяжПром",
       "baseIri" : "https://w3id.org/cityont",
       "labels" : {
@@ -536,6 +530,12 @@
       },
       "labels" : {
         "IRI-based" : "Разрешение_Т3Ж2_ВИТ_КР"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПричДМС",
+      "baseIri" : "https://w3id.org/cityont",
+      "labels" : {
+        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_ПричДМС"
       }
     }, {
       "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОП",
@@ -658,16 +658,16 @@
         "IRI-based" : "Разрешение_Т3Ж2_ВИТ_ОВП"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_НефтХимПром",
-      "baseIri" : "https://w3id.org/cityont",
-      "labels" : {
-        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_НефтХимПром"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОВПП",
       "baseIri" : "https://w3id.org/cityont",
       "labels" : {
         "IRI-based" : "Разрешение_ТПД2_1_ВИТ_ОВПП"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_НефтХимПром",
+      "baseIri" : "https://w3id.org/cityont",
+      "labels" : {
+        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_НефтХимПром"
       }
     }, {
       "iri" : "https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_РИ",
@@ -685,16 +685,16 @@
         "IRI-based" : "Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Склады",
-      "baseIri" : "https://w3id.org/cityont",
-      "labels" : {
-        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_Склады"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_РитУсл",
       "baseIri" : "https://w3id.org/cityont",
       "labels" : {
         "IRI-based" : "Разрешение_ТПД2_1_ВИТ_РитУсл"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Склады",
+      "baseIri" : "https://w3id.org/cityont",
+      "labels" : {
+        "IRI-based" : "Разрешение_ТПД2_1_ВИТ_Склады"
       }
     }, {
       "iri" : "https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ФармПром",
@@ -910,20 +910,6 @@
     "iri" : "https://w3id.org/cityont#E02_Permit",
     "baseIri" : "https://w3id.org/cityont",
     "instances" : 0,
-    "annotations" : {
-      "image" : [ {
-        "identifier" : "image",
-        "language" : "undefined",
-        "value" : "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg",
-        "type" : "label"
-      } ],
-      "creator" : [ {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Vitaly Vlasov; Natasha Chichkova",
-        "type" : "label"
-      } ]
-    },
     "label" : {
       "IRI-based" : "E02_Permit",
       "ru" : "Разрешение",
@@ -1057,15 +1043,6 @@
         "IRI-based" : "ТП3"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#ТП2",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : "Зона объектов автомобилестроительной промышленности, а также объектов тяжелой промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)\n     \nЦель выделения зоны – формирование и развитие зоны объектов автомобилестроительной и тяжелой промышленности."
-      },
-      "labels" : {
-        "IRI-based" : "ТП2"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#Т1Ж2-1",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -1073,6 +1050,15 @@
       },
       "labels" : {
         "IRI-based" : "Т1Ж2-1"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#ТП2",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Зона объектов автомобилестроительной промышленности, а также объектов тяжелой промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)\n     \nЦель выделения зоны – формирование и развитие зоны объектов автомобилестроительной и тяжелой промышленности."
+      },
+      "labels" : {
+        "IRI-based" : "ТП2"
       }
     }, {
       "iri" : "https://w3id.org/cityont#ТП1",
@@ -1228,15 +1214,6 @@
         "IRI-based" : "ТК1"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#ТПД2_1",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : " Градостроительный регламент многофункциональной зоны объектов производственного, складского назначения, инженерной инфраструктуры II и III классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры.\nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения, интенсивным движением большегрузного и железнодорожного транспорта. Сочетание объектов различных видов разрешенного использования в единой зоне возможно при соблюдении санитарных правил."
-      },
-      "labels" : {
-        "IRI-based" : "ТПД2_1"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#ТПД1_2",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -1246,13 +1223,13 @@
         "IRI-based" : "ТПД1_2"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#ТПД1_1",
+      "iri" : "https://w3id.org/cityont#ТПД2_1",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
-        "undefined" : "Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)\n          \nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов."
+        "undefined" : " Градостроительный регламент многофункциональной зоны объектов производственного, складского назначения, инженерной инфраструктуры II и III классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры.\nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения, интенсивным движением большегрузного и железнодорожного транспорта. Сочетание объектов различных видов разрешенного использования в единой зоне возможно при соблюдении санитарных правил."
       },
       "labels" : {
-        "IRI-based" : "ТПД1_1"
+        "IRI-based" : "ТПД2_1"
       }
     }, {
       "iri" : "https://w3id.org/cityont#ТР4",
@@ -1273,6 +1250,15 @@
         "IRI-based" : "ТУ"
       }
     }, {
+      "iri" : "https://w3id.org/cityont#ТПД1_1",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)\n          \nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов."
+      },
+      "labels" : {
+        "IRI-based" : "ТПД1_1"
+      }
+    }, {
       "iri" : "https://w3id.org/cityont#ТПД2_3",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -1282,15 +1268,6 @@
         "IRI-based" : "ТПД2_3"
       }
     }, {
-      "iri" : "https://w3id.org/cityont#ТПД1_3",
-      "baseIri" : "https://w3id.org/cityont",
-      "comment" : {
-        "undefined" : "Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)\n          \nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов."
-      },
-      "labels" : {
-        "IRI-based" : "ТПД1_3"
-      }
-    }, {
       "iri" : "https://w3id.org/cityont#ТПД2_2",
       "baseIri" : "https://w3id.org/cityont",
       "comment" : {
@@ -1298,6 +1275,15 @@
       },
       "labels" : {
         "IRI-based" : "ТПД2_2"
+      }
+    }, {
+      "iri" : "https://w3id.org/cityont#ТПД1_3",
+      "baseIri" : "https://w3id.org/cityont",
+      "comment" : {
+        "undefined" : "Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)\n          \nЦель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов."
+      },
+      "labels" : {
+        "IRI-based" : "ТПД1_3"
       }
     }, {
       "iri" : "https://w3id.org/cityont#ТР2",
@@ -1622,6 +1608,16 @@
     },
     "id" : "48"
   }, {
+    "iri" : "https://w3id.org/cityont#E08_Special_Permission_Condition",
+    "baseIri" : "https://w3id.org/cityont",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E08_Special_Permission_Condition",
+      "undefined" : "Особое условие разрешения"
+    },
+    "subClasses" : [ "29", "27" ],
+    "id" : "12"
+  }, {
     "iri" : "https://w3id.org/cityont#E09_ConstructionParam_MaxFloors",
     "baseIri" : "https://w3id.org/cityont",
     "instances" : 0,
@@ -1642,16 +1638,6 @@
     },
     "id" : "17",
     "superClasses" : [ "4" ]
-  }, {
-    "iri" : "https://w3id.org/cityont#E08_Special_Permission_Condition",
-    "baseIri" : "https://w3id.org/cityont",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "E08_Special_Permission_Condition",
-      "undefined" : "Особое условие разрешения"
-    },
-    "subClasses" : [ "29", "27" ],
-    "id" : "12"
   } ],
   "property" : [ {
     "id" : "0",
@@ -1770,12 +1756,12 @@
   }, {
     "range" : "4",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "4",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "iri" : "https://w3id.org/cityont#belongsToZone",
@@ -1791,17 +1777,17 @@
   }, {
     "range" : "12",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "range" : "12",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "4",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "iri" : "https://w3id.org/cityont#hasContructionParam",
@@ -1817,42 +1803,42 @@
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "4",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "34",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "range" : "15",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "15",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
     "range" : "4",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "range" : "4",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "41"
   }, {
     "range" : "4",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "iri" : "https://w3id.org/cityont#hasCode",
@@ -1884,7 +1870,7 @@
       "IRI-based" : "asWKT"
     },
     "domain" : "35",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "46"
   }, {
     "iri" : "https://w3id.org/cityont#hasPermitType",
