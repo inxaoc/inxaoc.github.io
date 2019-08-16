@@ -237,8 +237,15 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cityont#E02_Permit">
-        <rdfs:comment>Какой то коммент
-Какой то 2</rdfs:comment>
+        <rdfs:comment xml:lang="ru">&lt;h6&gt;Заголовок&lt;/h6&gt;
+Како то текст
+&lt;ul&gt;
+&lt;li&gt;пункт 1&lt;/li&gt;
+&lt;li&gt;пункт 1&lt;/li&gt;
+&lt;li&gt;пункт 1&lt;/li&gt;
+
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png&quot; width=&quot;100px&quot;&gt;
+&lt;/ul&gt;</rdfs:comment>
         <rdfs:label xml:lang="en">Permit</rdfs:label>
         <rdfs:label xml:lang="ru">Разрешение</rdfs:label>
     </owl:Class>

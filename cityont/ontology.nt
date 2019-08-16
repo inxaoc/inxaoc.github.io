@@ -127,7 +127,7 @@
 # 
 # https://w3id.org/cityont#E02_Permit
 <https://w3id.org/cityont#E02_Permit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cityont#E02_Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "Какой то коммент\nКакой то 2" .
+<https://w3id.org/cityont#E02_Permit> <http://www.w3.org/2000/01/rdf-schema#comment> "<h6>Заголовок</h6>\nКако то текст\n<ul>\n<li>пункт 1</li>\n<li>пункт 1</li>\n<li>пункт 1</li>\n\n<img src=\"https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png\" width=\"100px\">\n</ul>"@ru .
 <https://w3id.org/cityont#E02_Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Permit"@en .
 <https://w3id.org/cityont#E02_Permit> <http://www.w3.org/2000/01/rdf-schema#label> "Разрешение"@ru .
 # 
