@@ -4,9 +4,6 @@ This section provides details for each class and property defined by CityOnt.
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Permit</a>
-      </li>
-      <li>
          <a href="#E03_ZoneType" title="https://w3id.org/cityont#E03_ZoneType">Вид зоны</a>
       </li>
       <li>
@@ -59,6 +56,9 @@ This section provides details for each class and property defined by CityOnt.
             title="https://w3id.org/cityont#E13_ConstructionParam_MaxSize">Предельный размер земельного участка</a>
       </li>
       <li>
+         <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Разрешение</a>
+      </li>
+      <li>
          <a href="#Разрешение_Вид_использования_территорий"
             title="https://w3id.org/cityont#Разрешение_Вид_использования_территорий">Разрешение на Вид использования территорий</a>
       </li>
@@ -77,29 +77,6 @@ This section provides details for each class and property defined by CityOnt.
             title="https://w3id.org/cityont#E17_Max_square_condition">Условие отношения к основным видам строительства</a>
       </li>
    </ul>
-   <div class="entity" id="E02_Permit">
-      <h3>Permit<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/cityont#E02_Permit</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Разрешение_Вид_использования_территорий"
-               title="https://w3id.org/cityont#Разрешение_Вид_использования_территорий">Разрешение на Вид использования территорий</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Разрешение_Параметры_разрешенного_строительства"
-               title="https://w3id.org/cityont#Разрешение_Параметры_разрешенного_строительства">Разрешение на Параметры разрешенного строительства</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasPermit" title="https://w3id.org/cityont#hasPermit">имеет Разрешение</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="E03_ZoneType">
       <h3>Вид зоны<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -496,6 +473,29 @@ This section provides details for each class and property defined by CityOnt.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="E02_Permit">
+      <h3>Разрешение<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/cityont#E02_Permit</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Разрешение_Вид_использования_территорий"
+               title="https://w3id.org/cityont#Разрешение_Вид_использования_территорий">Разрешение на Вид использования территорий</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Разрешение_Параметры_разрешенного_строительства"
+               title="https://w3id.org/cityont#Разрешение_Параметры_разрешенного_строительства">Разрешение на Параметры разрешенного строительства</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasPermit" title="https://w3id.org/cityont#hasPermit">имеет Разрешение</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Разрешение_Вид_использования_территорий">
       <h3>Разрешение на Вид использования территорий<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -506,7 +506,7 @@ This section provides details for each class and property defined by CityOnt.
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Permit</a>
+            <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Разрешение</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -621,7 +621,7 @@ This section provides details for each class and property defined by CityOnt.
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Permit</a>
+            <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Разрешение</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -898,7 +898,7 @@ This section provides details for each class and property defined by CityOnt.
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Permit</a>
+               <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Разрешение</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
