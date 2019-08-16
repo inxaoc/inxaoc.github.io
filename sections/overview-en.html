@@ -1,0 +1,913 @@
+<html><h2 id="overv" class="list">CityOnt: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#E03_ZoneType" title="https://w3id.org/cityont#E03_ZoneType">Вид зоны</a>
+   </li>
+   <li>
+      <a href="#E05_LandUseType" title="https://w3id.org/cityont#E05_LandUseType">Вид использования территорий</a>
+   </li>
+   <li>
+      <a href="#E07_PermissionTypeLandUse"
+         title="https://w3id.org/cityont#E07_PermissionTypeLandUse">Вид разрешения использования территории</a>
+   </li>
+   <li>
+      <a href="#E01_Zone" title="https://w3id.org/cityont#E01_Zone">Зона ПЗЗ</a>
+   </li>
+   <li>
+      <a href="#E15_ConstructionParam_LandUseRatio"
+         title="https://w3id.org/cityont#E15_ConstructionParam_LandUseRatio">Коэффициент использования территории</a>
+   </li>
+   <li>
+      <a href="#E09_ConstructionParam_MaxFloors"
+         title="https://w3id.org/cityont#E09_ConstructionParam_MaxFloors">Максимальное количество этажей </a>
+   </li>
+   <li>
+      <a href="#E10_ConstructionParam_MaxRedLineOffset"
+         title="https://w3id.org/cityont#E10_ConstructionParam_MaxRedLineOffset">Максимальные выступы за красную линию частей зданий, строений и сооружений</a>
+   </li>
+   <li>
+      <a href="#E11_ConstructionParam_DangerClass"
+         title="https://w3id.org/cityont#E11_ConstructionParam_DangerClass">Максимальный класс опасности </a>
+   </li>
+   <li>
+      <a href="#E18_ConstructionParam_MinQuantityOfSpacesFreightTransport"
+         title="https://w3id.org/cityont#E18_ConstructionParam_MinQuantityOfSpacesFreightTransport">Минимальное количество мест для хранения грузового автотранспорта</a>
+   </li>
+   <li>
+      <a href="#E14_ConstructionParam_MaxSpace"
+         title="https://w3id.org/cityont#E14_ConstructionParam_MaxSpace">Минимальные отступы зданий, строений и сооружений от границ земельных участков</a>
+   </li>
+   <li>
+      <a href="#E19_ConstructionParam_MinBorderIndentMatchesWithRedLines"
+         title="https://w3id.org/cityont#E19_ConstructionParam_MinBorderIndentMatchesWithRedLines">Минимальные отступы от границ, совпадающими с красными линиями</a>
+   </li>
+   <li>
+      <a href="#E08_Special_Permission_Condition"
+         title="https://w3id.org/cityont#E08_Special_Permission_Condition">Особое условие разрешения</a>
+   </li>
+   <li>
+      <a href="#E06_ConstructionParam" title="https://w3id.org/cityont#E06_ConstructionParam">Параметр разрешенного строительства</a>
+   </li>
+   <li>
+      <a href="#E13_ConstructionParam_MaxSize"
+         title="https://w3id.org/cityont#E13_ConstructionParam_MaxSize">Предельный размер земельного участка</a>
+   </li>
+   <li>
+      <a href="#E02_Permit" title="https://w3id.org/cityont#E02_Permit">Разрешение</a>
+   </li>
+   <li>
+      <a href="#Разрешение_Вид_использования_территорий"
+         title="https://w3id.org/cityont#Разрешение_Вид_использования_территорий">Разрешение на Вид использования территорий</a>
+   </li>
+   <li>
+      <a href="#Разрешение_Параметры_разрешенного_строительства"
+         title="https://w3id.org/cityont#Разрешение_Параметры_разрешенного_строительства">Разрешение на Параметры разрешенного строительства</a>
+   </li>
+   <li>
+      <a href="#E04_Territory" title="https://w3id.org/cityont#E04_Territory">Территория</a>
+   </li>
+   <li>
+      <a href="#E16_Red_line_condition" title="https://w3id.org/cityont#E16_Red_line_condition">Условие о красных линиях</a>
+   </li>
+   <li>
+      <a href="#E17_Max_square_condition"
+         title="https://w3id.org/cityont#E17_Max_square_condition">Условие отношения к основным видам строительства</a>
+   </li>
+</ul><h4>Object Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasZoneType" title="https://w3id.org/cityont#hasZoneType">имеет Вид зоны</a>
+   </li>
+   <li>
+      <a href="#hasLandUseType" title="https://w3id.org/cityont#hasLandUseType">имеет Вид использования территорий</a>
+   </li>
+   <li>
+      <a href="#hasPermitType" title="https://w3id.org/cityont#hasPermitType">имеет Вид разрешения</a>
+   </li>
+   <li>
+      <a href="#hasSpecialCondition" title="https://w3id.org/cityont#hasSpecialCondition">имеет особое условие разрешения</a>
+   </li>
+   <li>
+      <a href="#hasContructionParam" title="https://w3id.org/cityont#hasContructionParam">имеет Параметр разрешенного строительства</a>
+   </li>
+   <li>
+      <a href="#hasPermit" title="https://w3id.org/cityont#hasPermit">имеет Разрешение</a>
+   </li>
+   <li>
+      <a href="#belongsToZone" title="https://w3id.org/cityont#belongsToZone">принадлежит зоне</a>
+   </li>
+</ul><h4>Data Properties</h4><ul class="hlist">
+   <li>
+      <a href="#hasConstructionTypeValue"
+         title="https://w3id.org/cityont#hasConstructionTypeValue">имеет значение параметра разрешенного строительства</a>
+   </li>
+   <li>
+      <a href="#hasCode" title="https://w3id.org/cityont#hasCode">имеет код</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul class="hlist">
+   <li>
+      <a href="#18_Квартал_Территория_1"
+         title="https://w3id.org/cityont#18_Квартал_Территория_1">
+         <span>18 квартал территория 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_1_Polygon"
+         title="https://w3id.org/cityont#18_Квартал_Территория_1_Polygon">
+         <span>18 квартал территория 1 polygon</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_2"
+         title="https://w3id.org/cityont#18_Квартал_Территория_2">
+         <span>18 квартал территория 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_2_Polygon"
+         title="https://w3id.org/cityont#18_Квартал_Территория_2_Polygon">
+         <span>18 квартал территория 2 polygon</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_3"
+         title="https://w3id.org/cityont#18_Квартал_Территория_3">
+         <span>18 квартал территория 3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_3_Polygon"
+         title="https://w3id.org/cityont#18_Квартал_Территория_3_Polygon">
+         <span>18 квартал территория 3 polygon</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_4"
+         title="https://w3id.org/cityont#18_Квартал_Территория_4">
+         <span>18 квартал территория 4</span>
+      </a>
+   </li>
+   <li>
+      <a href="#18_Квартал_Территория_4_Polygon"
+         title="https://w3id.org/cityont#18_Квартал_Территория_4_Polygon">
+         <span>18 квартал территория 4 polygon</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Вспомогательно-разрешенный"
+         title="https://w3id.org/cityont#Вспомогательно-разрешенный">Вспомогательно-разрешенный</a>
+   </li>
+   <li>
+      <a href="#Жилая" title="https://w3id.org/cityont#Жилая">Жилая</a>
+   </li>
+   <li>
+      <a href="#Инженерной_и_траснпортной_инфраструктуры"
+         title="https://w3id.org/cityont#Инженерной_и_траснпортной_инфраструктуры">
+         <span>инженерной и траснпортной инфраструктуры</span>
+      </a>
+   </li>
+   <li>
+      <a href="#КИТ_для_земельных_участков_МВЖЗ"
+         title="https://w3id.org/cityont#КИТ_для_земельных_участков_МВЖЗ">
+         <span>кит для земельных участков мвжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#КИТ_для_земельных_участков_СЖЗ"
+         title="https://w3id.org/cityont#КИТ_для_земельных_участков_СЖЗ">
+         <span>кит для земельных участков сжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#МКЭ" title="https://w3id.org/cityont#МКЭ">Максимальное количество этажей </a>
+   </li>
+   <li>
+      <a href="#МВЗКЛ" title="https://w3id.org/cityont#МВЗКЛ">Максимальные выступы за красную линию частей зданий, строений и сооружений</a>
+   </li>
+   <li>
+      <a href="#МКО" title="https://w3id.org/cityont#МКО">Максимальный класс опасности </a>
+   </li>
+   <li>
+      <a href="#МООГУССКЛ" title="https://w3id.org/cityont#МООГУССКЛ">Минимальные отступы от границ земельных участков красными линиями указанных проездов. </a>
+   </li>
+   <li>
+      <a href="#Минимальный_отступ_от_зданий_без_проемов"
+         title="https://w3id.org/cityont#Минимальный_отступ_от_зданий_без_проемов">Минимальные отступы стен зданий, строений и сооружений без окон, дверных и иных проемов от границ земельных участков</a>
+   </li>
+   <li>
+      <a href="#МКМДХГТ_для_остальных_ВИТ"
+         title="https://w3id.org/cityont#МКМДХГТ_для_остальных_ВИТ">
+         <span>мкмдхгт для остальных вит</span>
+      </a>
+   </li>
+   <li>
+      <a href="#МКМДХГТ_для_Складов" title="https://w3id.org/cityont#МКМДХГТ_для_Складов">
+         <span>мкмдхгт для складов</span>
+      </a>
+   </li>
+   <li>
+      <a href="#МКМДХГТ_площадь_не_примыкакают_к_проезчасти"
+         title="https://w3id.org/cityont#МКМДХГТ_площадь_не_примыкакают_к_проезчасти">
+         <span>мкмдхгт площадь не примыкакают к проезчасти</span>
+      </a>
+   </li>
+   <li>
+      <a href="#МКМДХГТ_площадь_примыкакают_к_проезчасти"
+         title="https://w3id.org/cityont#МКМДХГТ_площадь_примыкакают_к_проезчасти">
+         <span>мкмдхгт площадь примыкакают к проезчасти</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Многофункциональная_ПСИОД"
+         title="https://w3id.org/cityont#Многофункциональная_ПСИОД">Многофункциональная_ПСИОД</a>
+   </li>
+   <li>
+      <a href="#Условие_о_строительстве_рядом_с_красными_линиями"
+         title="https://w3id.org/cityont#Условие_о_строительстве_рядом_с_красными_линиями">могут размещаться только на земельных участках, примыкающих к красным линиям</a>
+   </li>
+   <li>
+      <a href="#Набор_параметров_1" title="https://w3id.org/cityont#Набор_параметров_1">
+         <span>набор параметров 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Общественно-деловая" title="https://w3id.org/cityont#Общественно-деловая">
+         <span>общественно деловая</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Объектов_внешнего_транспорта"
+         title="https://w3id.org/cityont#Объектов_внешнего_транспорта">
+         <span>объектов внешнего транспорта</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешенный" title="https://w3id.org/cityont#Разрешенный">Основной разрешенный</a>
+   </li>
+   <li>
+      <a href="#относится_к_основным_видам_если_не_более_1500_м*м"
+         title="https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м">относится к основным видам при площади не более 1500 м*м</a>
+   </li>
+   <li>
+      <a href="#ПРЗУ" title="https://w3id.org/cityont#ПРЗУ">Предельный размер земельного участка</a>
+   </li>
+   <li>
+      <a href="#Производственная" title="https://w3id.org/cityont#Производственная">
+         <span>производственная</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_АВО" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_АВО">
+         <span>разрешение т3ж2 вит аво</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_БСД" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_БСД">
+         <span>разрешение т3ж2 вит бсд</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ГО" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ГО">
+         <span>разрешение т3ж2 вит го</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ЗУОП"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ЗУОП">
+         <span>разрешение т3ж2 вит зуоп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_КО" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_КО">
+         <span>разрешение т3ж2 вит ко</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_КР" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_КР">
+         <span>разрешение т3ж2 вит кр</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_Магазины"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Магазины">
+         <span>разрешение т3ж2 вит магазины</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_МЖЗ" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_МЖЗ">
+         <span>разрешение т3ж2 вит мжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ОВП" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОВП">
+         <span>разрешение т3ж2 вит овп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ОГН" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОГН">
+         <span>разрешение т3ж2 вит огн</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ОП" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОП">
+         <span>разрешение т3ж2 вит оп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ОПС" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОПС">
+         <span>разрешение т3ж2 вит опс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_ОУ" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОУ">
+         <span>разрешение т3ж2 вит оу</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_РИ" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_РИ">
+         <span>разрешение т3ж2 вит ри</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_Рынки"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Рынки">
+         <span>разрешение т3ж2 вит рынки</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_Связь"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Связь">
+         <span>разрешение т3ж2 вит связь</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_СЖЗ" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_СЖЗ">
+         <span>разрешение т3ж2 вит сжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_СМО" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_СМО">
+         <span>разрешение т3ж2 вит смо</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ВИТ_Соц_Обс"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Соц_Обс">
+         <span>разрешение т3ж2 вит соц обс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ">
+         <span>разрешение т3ж2 прс кит мжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_КИТ_СЖЗ"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_СЖЗ">
+         <span>разрешение т3ж2 прс кит сжз</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_МВЗКЛ"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МВЗКЛ">
+         <span>разрешение т3ж2 прс мвзкл</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_МКО" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МКО">
+         <span>разрешение т3ж2 прс мко</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_МКЭ" title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МКЭ">
+         <span>разрешение т3ж2 прс мкэ</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_МОЗ_БП"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МОЗ_БП">
+         <span>разрешение т3ж2 прс моз бп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_Т3Ж2_ПРС_ПРЗУ"
+         title="https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_ПРЗУ">
+         <span>разрешение т3ж2 прс прзу</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТЗЖ2_ВИТ_АПО"
+         title="https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_АПО">
+         <span>разрешение тзж2 вит апо</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТЗЖ2_ВИТ_БО" title="https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_БО">
+         <span>разрешение тзж2 вит бо</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТЗЖ2_ВИТ_ДНСОО"
+         title="https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_ДНСОО">
+         <span>разрешение тзж2 вит днсоо</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТЗЖ2_ВИТ_Спорт"
+         title="https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_Спорт">
+         <span>разрешение тзж2 вит спорт</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_АвтоСтройПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_АвтоСтройПром">
+         <span>разрешение тпд2 1 вит автостройпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_АвтоТранс"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_АвтоТранс">
+         <span>разрешение тпд2 1 вит автотранс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ВетОб"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ВетОб">
+         <span>разрешение тпд2 1 вит ветоб</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ВодТранс"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ВодТранс">
+         <span>разрешение тпд2 1 вит водтранс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ГидроТехСооруж"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ГидроТехСооруж">
+         <span>разрешение тпд2 1 вит гидротехсооруж</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ДелУп"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ДелУп">
+         <span>разрешение тпд2 1 вит делуп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ЖелСерв"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЖелСерв">
+         <span>разрешение тпд2 1 вит желсерв</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ЗУТОП"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЗУТОП">
+         <span>разрешение тпд2 1 вит зутоп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_КО"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_КО">
+         <span>разрешение тпд2 1 вит ко</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ЛегПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЛегПром">
+         <span>разрешение тпд2 1 вит легпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_Магазины"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Магазины">
+         <span>разрешение тпд2 1 вит магазины</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_НефтХимПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_НефтХимПром">
+         <span>разрешение тпд2 1 вит нефтхимпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ОВПП"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОВПП">
+         <span>разрешение тпд2 1 вит овпп</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ОДВОГидметео"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОДВОГидметео">
+         <span>разрешение тпд2 1 вит одвогидметео</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ОПридСер"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОПридСер">
+         <span>разрешение тпд2 1 вит опридсер</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ПД"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПД">
+         <span>разрешение тпд2 1 вит пд</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ПищПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПищПром">
+         <span>разрешение тпд2 1 вит пищпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ПричДМС"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПричДМС">
+         <span>разрешение тпд2 1 вит причдмс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_РитУсл"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_РитУсл">
+         <span>разрешение тпд2 1 вит ритусл</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_Рынки"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Рынки">
+         <span>разрешение тпд2 1 вит рынки</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_Связь"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Связь">
+         <span>разрешение тпд2 1 вит связь</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_Склады"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Склады">
+         <span>разрешение тпд2 1 вит склады</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_СлГараж"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_СлГараж">
+         <span>разрешение тпд2 1 вит слгараж</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_СтройПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_СтройПром">
+         <span>разрешение тпд2 1 вит стройпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ТрубопрТранс"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ТрубопрТранс">
+         <span>разрешение тпд2 1 вит трубопртранс</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ТяжПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ТяжПром">
+         <span>разрешение тпд2 1 вит тяжпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ФармПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ФармПром">
+         <span>разрешение тпд2 1 вит фармпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром">
+         <span>разрешение тпд2 1 вит целюлбумпром</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ВИТ_Энерг"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Энерг">
+         <span>разрешение тпд2 1 вит энерг</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МВЗКЛ"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МВЗКЛ">
+         <span>разрешение тпд2 1 прс мвзкл</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_остальных_ВИТ"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_остальных_ВИТ">
+         <span>разрешение тпд2 1 прс мкмдхгт для остальных вит</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов">
+         <span>разрешение тпд2 1 прс мкмдхгт для складов</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти">
+         <span>разрешение тпд2 1 прс мкмдхгт площадь не примыкакают к проезчасти</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти">
+         <span>разрешение тпд2 1 прс мкмдхгт площадь примыкакают к проезчасти</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКО"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКО">
+         <span>разрешение тпд2 1 прс мко</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МКЭ"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКЭ">
+         <span>разрешение тпд2 1 прс мкэ</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТПД2_1_ПРС_МООГУССКЛ"
+         title="https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МООГУССКЛ">
+         <span>разрешение тпд2 1 прс моогусскл</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТР3-2_ВИТ_ОГН"
+         title="https://w3id.org/cityont#Разрешение_ТР3-2_ВИТ_ОГН">
+         <span>разрешение тр3 2 вит огн</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Разрешение_ТР3-2_ПРС_Набор1"
+         title="https://w3id.org/cityont#Разрешение_ТР3-2_ПРС_Набор1">
+         <span>разрешение тр3 2 прс набор1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Рекреационного_назначения"
+         title="https://w3id.org/cityont#Рекреационного_назначения">
+         <span>рекреационного назначения</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Сельскохозяйственного_использования"
+         title="https://w3id.org/cityont#Сельскохозяйственного_использования">
+         <span>сельскохозяйственного использования</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Специального_назначения"
+         title="https://w3id.org/cityont#Специального_назначения">Специального назначения</a>
+   </li>
+   <li>
+      <a href="#Т1Ж1" title="https://w3id.org/cityont#Т1Ж1">
+         <span>т1ж1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т1Ж2-1" title="https://w3id.org/cityont#Т1Ж2-1">
+         <span>т1ж2 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т1Ж2-2" title="https://w3id.org/cityont#Т1Ж2-2">
+         <span>т1ж2 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т2Ж1" title="https://w3id.org/cityont#Т2Ж1">
+         <span>т2ж1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т2ЖД2" title="https://w3id.org/cityont#Т2ЖД2">
+         <span>т2жд2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т2ЖД2/ТК3" title="https://w3id.org/cityont#Т2ЖД2/ТК3">
+         <span>т2жд2/тк3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т3Ж1" title="https://w3id.org/cityont#Т3Ж1">
+         <span>т3ж1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т3Ж2" title="https://w3id.org/cityont#Т3Ж2">
+         <span>т3ж2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Т3ЖД3" title="https://w3id.org/cityont#Т3ЖД3">
+         <span>т3жд3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД1-1_1" title="https://w3id.org/cityont#ТД1-1_1">
+         <span>тд1 1 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД1-1_2" title="https://w3id.org/cityont#ТД1-1_2">
+         <span>тд1 1 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД1-2_1" title="https://w3id.org/cityont#ТД1-2_1">
+         <span>тд1 2 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД1-2_2" title="https://w3id.org/cityont#ТД1-2_2">
+         <span>тд1 2 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД2_1" title="https://w3id.org/cityont#ТД2_1">
+         <span>тд2 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТД2_2" title="https://w3id.org/cityont#ТД2_2">
+         <span>тд2 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ1-1" title="https://w3id.org/cityont#ТИ1-1">
+         <span>ти1 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ1-2" title="https://w3id.org/cityont#ТИ1-2">
+         <span>ти1 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ2" title="https://w3id.org/cityont#ТИ2">
+         <span>ти2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ3" title="https://w3id.org/cityont#ТИ3">
+         <span>ти3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ4_1" title="https://w3id.org/cityont#ТИ4_1">
+         <span>ти4 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТИ4_2" title="https://w3id.org/cityont#ТИ4_2">
+         <span>ти4 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТК1" title="https://w3id.org/cityont#ТК1">
+         <span>тк1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТК2" title="https://w3id.org/cityont#ТК2">
+         <span>тк2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТК3" title="https://w3id.org/cityont#ТК3">
+         <span>тк3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТП1" title="https://w3id.org/cityont#ТП1">
+         <span>тп1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТП2" title="https://w3id.org/cityont#ТП2">
+         <span>тп2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТП3" title="https://w3id.org/cityont#ТП3">
+         <span>тп3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТП4" title="https://w3id.org/cityont#ТП4">
+         <span>тп4</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД1_1" title="https://w3id.org/cityont#ТПД1_1">
+         <span>тпд1 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД1_2" title="https://w3id.org/cityont#ТПД1_2">
+         <span>тпд1 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД1_3" title="https://w3id.org/cityont#ТПД1_3">
+         <span>тпд1 3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД2_1" title="https://w3id.org/cityont#ТПД2_1">
+         <span>тпд2 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД2_2" title="https://w3id.org/cityont#ТПД2_2">
+         <span>тпд2 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТПД2_3" title="https://w3id.org/cityont#ТПД2_3">
+         <span>тпд2 3</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР0-1" title="https://w3id.org/cityont#ТР0-1">
+         <span>тр0 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР0-2" title="https://w3id.org/cityont#ТР0-2">
+         <span>тр0 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР1" title="https://w3id.org/cityont#ТР1">
+         <span>тр1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР2" title="https://w3id.org/cityont#ТР2">
+         <span>тр2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР3-1" title="https://w3id.org/cityont#ТР3-1">
+         <span>тр3 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР3-2" title="https://w3id.org/cityont#ТР3-2">
+         <span>тр3 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР4" title="https://w3id.org/cityont#ТР4">
+         <span>тр4</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР5-1" title="https://w3id.org/cityont#ТР5-1">
+         <span>тр5 1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТР5-2" title="https://w3id.org/cityont#ТР5-2">
+         <span>тр5 2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТС1" title="https://w3id.org/cityont#ТС1">
+         <span>тс1</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТС2" title="https://w3id.org/cityont#ТС2">
+         <span>тс2</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ТУ" title="https://w3id.org/cityont#ТУ">
+         <span>ту</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Улично-дорожной_сети_города"
+         title="https://w3id.org/cityont#Улично-дорожной_сети_города">
+         <span>улично дорожной сети города</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Условно-разрешенный" title="https://w3id.org/cityont#Условно-разрешенный">Условно-разрешенный</a>
+   </li>
+</ul></html>

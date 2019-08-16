@@ -1,0 +1,1802 @@
+@prefix : <https://w3id.org/cityont#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/cityont#> .
+
+<https://w3id.org/cityont#> rdf:type owl:Ontology ;
+                             owl:imports <https://w3id.org/cityont/kvrizy#> ;
+                             rdfs:label "CityOnt" ;
+                             owl:versionInfo "4.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#wktLiteral
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/cityont#belongsToZone
+:belongsToZone rdf:type owl:ObjectProperty ;
+               rdfs:domain :E04_Territory ;
+               rdfs:range :E01_Zone ;
+               rdfs:label "принадлежит зоне" .
+
+
+###  https://w3id.org/cityont#hasContructionParam
+:hasContructionParam rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Разрешение_Параметры_разрешенного_строительства ;
+                     rdfs:range :E06_ConstructionParam ;
+                     rdfs:label "имеет Параметр разрешенного строительства" .
+
+
+###  https://w3id.org/cityont#hasLandUseType
+:hasLandUseType rdf:type owl:ObjectProperty ;
+                rdfs:domain :Разрешение_Вид_использования_территорий ;
+                rdfs:range :E05_LandUseType ;
+                rdfs:label "имеет Вид использования территорий" .
+
+
+###  https://w3id.org/cityont#hasPermit
+:hasPermit rdf:type owl:ObjectProperty ;
+           rdfs:domain :E01_Zone ;
+           rdfs:range :E02_Permit ;
+           rdfs:label "имеет Разрешение" .
+
+
+###  https://w3id.org/cityont#hasPermitType
+:hasPermitType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Разрешение_Вид_использования_территорий ;
+               rdfs:range :E07_PermissionTypeLandUse ;
+               rdfs:label "имеет Вид разрешения" .
+
+
+###  https://w3id.org/cityont#hasSpecialCondition
+:hasSpecialCondition rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Разрешение_Вид_использования_территорий ;
+                     rdfs:range :E08_Special_Permission_Condition ;
+                     rdfs:label "имеет особое условие разрешения" .
+
+
+###  https://w3id.org/cityont#hasZoneType
+:hasZoneType rdf:type owl:ObjectProperty ;
+             rdfs:domain :E01_Zone ;
+             rdfs:range :E03_ZoneType ;
+             rdfs:label "имеет Вид зоны" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/cityont#hasCode
+:hasCode rdf:type owl:DatatypeProperty ;
+         rdfs:range rdfs:Literal ;
+         rdfs:label "имеет код" .
+
+
+###  https://w3id.org/cityont#hasConstructionTypeValue
+:hasConstructionTypeValue rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Разрешение_Параметры_разрешенного_строительства ;
+                          rdfs:range rdfs:Literal ;
+                          rdfs:label "имеет значение параметра разрешенного строительства" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class .
+
+
+###  http://www.opengis.net/ont/sf#Polygon
+<http://www.opengis.net/ont/sf#Polygon> rdf:type owl:Class .
+
+
+###  https://w3id.org/cityont#E01_Zone
+:E01_Zone rdf:type owl:Class ;
+          rdfs:label "Зона ПЗЗ" .
+
+
+###  https://w3id.org/cityont#E02_Permit
+:E02_Permit rdf:type owl:Class ;
+            rdfs:label "Разрешение" .
+
+
+###  https://w3id.org/cityont#E03_ZoneType
+:E03_ZoneType rdf:type owl:Class ;
+              rdfs:label "Вид зоны" .
+
+
+###  https://w3id.org/cityont#E04_Territory
+:E04_Territory rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+               rdfs:label "Территория" .
+
+
+###  https://w3id.org/cityont#E05_LandUseType
+:E05_LandUseType rdf:type owl:Class ;
+                 rdfs:label "Вид использования территорий" .
+
+
+###  https://w3id.org/cityont#E06_ConstructionParam
+:E06_ConstructionParam rdf:type owl:Class ;
+                       rdfs:comment "Описание данного параметра" ;
+                       rdfs:label "Параметр разрешенного строительства" ;
+                       rdfs:seeAlso "Ссылка на документ" .
+
+
+###  https://w3id.org/cityont#E07_PermissionTypeLandUse
+:E07_PermissionTypeLandUse rdf:type owl:Class ;
+                           rdfs:comment "Один из трех видов разрешений, относящихся к Видам использования территорий" ;
+                           rdfs:label "Вид разрешения использования территории" .
+
+
+###  https://w3id.org/cityont#E08_Special_Permission_Condition
+:E08_Special_Permission_Condition rdf:type owl:Class ;
+                                  rdfs:label "Особое условие разрешения" .
+
+
+###  https://w3id.org/cityont#E09_ConstructionParam_MaxFloors
+:E09_ConstructionParam_MaxFloors rdf:type owl:Class ;
+                                 rdfs:subClassOf :E06_ConstructionParam ;
+                                 rdfs:comment "максимальное количество этажей надземной части зданий, строений, сооружений на земельных участках" ;
+                                 rdfs:label "Максимальное количество этажей " .
+
+
+###  https://w3id.org/cityont#E10_ConstructionParam_MaxRedLineOffset
+:E10_ConstructionParam_MaxRedLineOffset rdf:type owl:Class ;
+                                        rdfs:subClassOf :E06_ConstructionParam ;
+                                        rdfs:label "Максимальные выступы за красную линию частей зданий, строений и сооружений" .
+
+
+###  https://w3id.org/cityont#E11_ConstructionParam_DangerClass
+:E11_ConstructionParam_DangerClass rdf:type owl:Class ;
+                                   rdfs:subClassOf :E06_ConstructionParam ;
+                                   rdfs:comment "(в соответствии с санитарно-эпидемиологическими правилами) объектов капитального строительства, размещаемых на земельных участках" ;
+                                   rdfs:label "Максимальный класс опасности " .
+
+
+###  https://w3id.org/cityont#E13_ConstructionParam_MaxSize
+:E13_ConstructionParam_MaxSize rdf:type owl:Class ;
+                               rdfs:subClassOf :E06_ConstructionParam ;
+                               rdfs:label "Предельный размер земельного участка" .
+
+
+###  https://w3id.org/cityont#E14_ConstructionParam_MaxSpace
+:E14_ConstructionParam_MaxSpace rdf:type owl:Class ;
+                                rdfs:subClassOf :E06_ConstructionParam ;
+                                rdfs:comment "Общие требования к минимальным отступам зданий, строений и сооружений от границ земельных участков в целях определения мест допустимого размещения зданий, строений и сооружений, за пределами которых запрещено строительство зданий, строений и сооружений, устанавливаются для участков, расположенных во всех территориальных зонах, кроме жилых зон с кодовым обозначением Т1Ж1, Т1Ж2-1 и Т1Ж2-2, многофункциональной зоны с кодовым обозначением Т3ЖД3 и общественно-деловой подзоны с кодовым обозначением ТД1-1_1, требования к которым установлены в разделе 2 настоящего Приложения в составе градостроительных регламентов для указанных территориальных зон." ;
+                                rdfs:label "Минимальные отступы зданий, строений и сооружений от границ земельных участков" .
+
+
+###  https://w3id.org/cityont#E15_ConstructionParam_LandUseRatio
+:E15_ConstructionParam_LandUseRatio rdf:type owl:Class ;
+                                    rdfs:subClassOf :E06_ConstructionParam ;
+                                    rdfs:comment "Коэффициент использования территории определяется как отношение максимальной общей площади квартир, которые можно разместить на земельном участке, к площади земельного участка." ;
+                                    rdfs:label "Коэффициент использования территории" .
+
+
+###  https://w3id.org/cityont#E16_Red_line_condition
+:E16_Red_line_condition rdf:type owl:Class ;
+                        rdfs:subClassOf :E08_Special_Permission_Condition ;
+                        rdfs:label "Условие о красных линиях" .
+
+
+###  https://w3id.org/cityont#E17_Max_square_condition
+:E17_Max_square_condition rdf:type owl:Class ;
+                          rdfs:subClassOf :E08_Special_Permission_Condition ;
+                          rdfs:label "Условие отношения к основным видам строительства" .
+
+
+###  https://w3id.org/cityont#E18_ConstructionParam_MinQuantityOfSpacesFreightTransport
+:E18_ConstructionParam_MinQuantityOfSpacesFreightTransport rdf:type owl:Class ;
+                                                           rdfs:subClassOf :E06_ConstructionParam ;
+                                                           rdfs:comment "Минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках." ;
+                                                           rdfs:label "Минимальное количество мест для хранения грузового автотранспорта" .
+
+
+###  https://w3id.org/cityont#E19_ConstructionParam_MinBorderIndentMatchesWithRedLines
+:E19_ConstructionParam_MinBorderIndentMatchesWithRedLines rdf:type owl:Class ;
+                                                          rdfs:subClassOf :E06_ConstructionParam ;
+                                                          rdfs:comment "Минимальные отступы от границ земельных участков стен зданий, строений и сооружений по границам земельных участков, совпадающим с внутриквартальными проездами и(или) красными линиями указанных проездов." ;
+                                                          rdfs:label "Минимальные отступы от границ, совпадающими с красными линиями" .
+
+
+###  https://w3id.org/cityont#Разрешение_Вид_использования_территорий
+:Разрешение_Вид_использования_территорий rdf:type owl:Class ;
+                                         rdfs:subClassOf :E02_Permit ;
+                                         rdfs:label "Разрешение на Вид использования территорий" .
+
+
+###  https://w3id.org/cityont#Разрешение_Параметры_разрешенного_строительства
+:Разрешение_Параметры_разрешенного_строительства rdf:type owl:Class ;
+                                                 rdfs:subClassOf :E02_Permit ;
+                                                 rdfs:label "Разрешение на Параметры разрешенного строительства" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/cityont#Вспомогательно-разрешенный
+:Вспомогательно-разрешенный rdf:type owl:NamedIndividual ,
+                                     :E07_PermissionTypeLandUse ;
+                            rdfs:comment """являются дополнительными к разрешенным и условно разрешённым видам использования, не могут быть самостоятельными от них и быть преимущественными, осуществляются только совместно с разрешенными и условно разрешёнными видами использования участков. К вспомогательным относятся такие, как, например, под гаражи, локальные объекты инженерной инфраструктуры и пр. Выбирать вспомогательные виды без выбора разрешенного запрещено.
+
+ 
+
+""" ;
+                            rdfs:label "Вспомогательно-разрешенный" .
+
+
+###  https://w3id.org/cityont#Жилая
+:Жилая rdf:type owl:NamedIndividual ,
+                :E03_ZoneType ;
+       rdfs:comment """Предназначены для застройки многоквартирными жилыми домами, жилыми домами малой и средней этажности, индивидуальными жилыми домами с приусадебными земельными участками.
+В жилых зонах допускается размещение отдельно стоящих, встроенных или пристроенных объектов социально-культурного и культурно-бытового обслуживания населения, культовых зданий, стоянок автомобильного транспорта, промышленных, коммунальных и складских объектов, для которых не требуется установление санитарно-защитных зон и деятельность которых не оказывает вредного воздействие на окружающую среду.
+К жилым зонам также относятся территории садоводческих и дачных кооперативов, если они расположены внутри границ (черты) поселения.
+Источник: https://www.zemvopros.ru/page_4603.htm""" ;
+       rdfs:label "Жилая" .
+
+
+###  https://w3id.org/cityont#Инженерной_и_траснпортной_инфраструктуры
+:Инженерной_и_траснпортной_инфраструктуры rdf:type owl:NamedIndividual ,
+                                                   :E03_ZoneType ;
+                                          rdfs:comment """Предназначены для размещения и деятельности сооружений и коммуникаций железнодорожного, автомобильного, речного, морского, воздушного и трубопроводного транспорта, связи, а также инженерного оборудования.
+Обязательное условие при размещении объектов инженерной и транспортной инфраструктуры - соблюдение необходимых расстояний от таких объектов до территорий жилых, общественно-деловых и рекреационных зон и других требований для предотвращения вредного воздействия на среду жизнедеятельности.
+Если же объекты инженерной и транспортной инфраструктуры обладают особенностью прямого вредного воздействия на безопасность населения, то они размещаются за пределами городских и сельских поселений.
+Обязанность по благоустройству территорий отвода объектов инженерной и транспортной инфраструктуры и их санитарно-защитных зон возлагается на собственников сооружений и коммуникаций, транспорта, связи и инженерного оборудования.
+Источник: https://www.zemvopros.ru/page_4603.htm""" .
+
+
+###  https://w3id.org/cityont#КИТ_для_земельных_участков_МВЖЗ
+:КИТ_для_земельных_участков_МВЖЗ rdf:type owl:NamedIndividual ,
+                                          :E15_ConstructionParam_LandUseRatio ;
+                                 :hasLandUseType <https://w3id.org/cityont/kvrizy#многоэтажная_жилая_застройка_высотная_застройка> ;
+                                 rdfs:comment "Коэффицент использования территории для многоэтажной жилой застройки от 9 этажей и выше" .
+
+
+###  https://w3id.org/cityont#КИТ_для_земельных_участков_СЖЗ
+:КИТ_для_земельных_участков_СЖЗ rdf:type owl:NamedIndividual ,
+                                         :E15_ConstructionParam_LandUseRatio ;
+                                :hasLandUseType <https://w3id.org/cityont/kvrizy#среднеэтажная_жилая_застройка> ;
+                                rdfs:comment "Коэффицент использования территории для среднеэтажной жилой застройки до 8 этажей включительно" .
+
+
+###  https://w3id.org/cityont#МВЗКЛ
+:МВЗКЛ rdf:type owl:NamedIndividual ,
+                :E10_ConstructionParam_MaxRedLineOffset ;
+       rdfs:label "Максимальные выступы за красную линию частей зданий, строений и сооружений" .
+
+
+###  https://w3id.org/cityont#МКМДХГТ_для_Складов
+:МКМДХГТ_для_Складов rdf:type owl:NamedIndividual ,
+                              :E18_ConstructionParam_MinQuantityOfSpacesFreightTransport ;
+                     :hasLandUseType <https://w3id.org/cityont/kvrizy#склады> ;
+                     rdfs:comment "Для объектов, относящихся к видам разрешенного использования \"склады\" (код 6.9)." .
+
+
+###  https://w3id.org/cityont#МКМДХГТ_для_остальных_ВИТ
+:МКМДХГТ_для_остальных_ВИТ rdf:type owl:NamedIndividual ,
+                                    :E18_ConstructionParam_MinQuantityOfSpacesFreightTransport ;
+                           :hasLandUseType <https://w3id.org/cityont/kvrizy#магазины> ,
+                                           <https://w3id.org/cityont/kvrizy#общественное_питание> ,
+                                           <https://w3id.org/cityont/kvrizy#производственная_деятельность> ,
+                                           <https://w3id.org/cityont/kvrizy#рынки> ;
+                           rdfs:comment "Для объектов, относящихся к видам разрешенного использования \"рынки\" (код 4.3), \"магазины\" (код 4.4), \"общественное питание\" (код 4.6), \"производственная деятельность\" (код 6.0), \"хранение и переработка сельскохозяйственной продукции\" (код 1.15), \"обеспечение сельскохозяйственного производства\" (код 1.18)." .
+
+
+###  https://w3id.org/cityont#МКМДХГТ_площадь_не_примыкакают_к_проезчасти
+:МКМДХГТ_площадь_не_примыкакают_к_проезчасти rdf:type owl:NamedIndividual ,
+                                                      :E18_ConstructionParam_MinQuantityOfSpacesFreightTransport ;
+                                             rdfs:comment "Площадь машино-мест для хранения (технологического отстоя) грузового автотранспорта." .
+
+
+###  https://w3id.org/cityont#МКМДХГТ_площадь_примыкакают_к_проезчасти
+:МКМДХГТ_площадь_примыкакают_к_проезчасти rdf:type owl:NamedIndividual ,
+                                                   :E18_ConstructionParam_MinQuantityOfSpacesFreightTransport ;
+                                          rdfs:comment "Площадь машино-мест для хранения (технологического отстоя) грузового автотранспорта при примыкании участков для стоянки к проезжей части улиц и проездов и продольном расположении автомобилей." .
+
+
+###  https://w3id.org/cityont#МКО
+:МКО rdf:type owl:NamedIndividual ,
+              :E11_ConstructionParam_DangerClass ;
+     rdfs:label "Максимальный класс опасности " .
+
+
+###  https://w3id.org/cityont#МКЭ
+:МКЭ rdf:type owl:NamedIndividual ,
+              :E09_ConstructionParam_MaxFloors ;
+     rdfs:label "Максимальное количество этажей " .
+
+
+###  https://w3id.org/cityont#МООГУССКЛ
+:МООГУССКЛ rdf:type owl:NamedIndividual ,
+                    :E19_ConstructionParam_MinBorderIndentMatchesWithRedLines ;
+           rdfs:label "Минимальные отступы от границ земельных участков красными линиями указанных проездов. " .
+
+
+###  https://w3id.org/cityont#Минимальный_отступ_от_зданий_без_проемов
+:Минимальный_отступ_от_зданий_без_проемов rdf:type owl:NamedIndividual ,
+                                                   :E14_ConstructionParam_MaxSpace ;
+                                          rdfs:label "Минимальные отступы стен зданий, строений и сооружений без окон, дверных и иных проемов от границ земельных участков" .
+
+
+###  https://w3id.org/cityont#Многофункциональная_ПСИОД
+:Многофункциональная_ПСИОД rdf:type owl:NamedIndividual ,
+                                    :E03_ZoneType ;
+                           rdfs:comment "Многофункциональные зоны с включением объектов производственного, складского назначения, инженерной инфраструктуры и общественно-деловой застройки" ;
+                           rdfs:label "Многофункциональная_ПСИОД" .
+
+
+###  https://w3id.org/cityont#Набор_параметров_1
+:Набор_параметров_1 rdf:type owl:NamedIndividual ;
+                    :hasConstructionTypeValue "23 квадратных метра на 100 кв. метров общей площади квартир в объекте капитального строительства на участке" ;
+                    rdfs:comment """- Малоэтажная
+- многоквартирная жилая застройка, среднеэтажная жилая застройка, многоэтажная
+- жилая застройка (высотная застройка)""" .
+
+
+###  https://w3id.org/cityont#Общественно-деловая
+:Общественно-деловая rdf:type owl:NamedIndividual ,
+                              :E03_ZoneType ;
+                     rdfs:comment """Предназначены для размещения объектов здравоохранения, культуры, торговли, общественного питания, бытового обслуживания, коммерческой деятельности, а также образовательных учреждений (среднего профессионального или высшего профессионального образования), административных, научно-исследовательских учреждений, культовых зданий и иных зданий, строений, сооружений, стоянок автомобильного транспорта, деловых, финансовых и общественных центров.
+В общественно-деловых зонах возможно размещение жилых домов, гостиниц, подземных или многоэтажных гаражей. В генеральных планах, в связи с такими сочетаниями возможностей застройки территорий, могут встретиться обозначения:
+Источник: https://www.zemvopros.ru/page_4603.htm""" .
+
+
+###  https://w3id.org/cityont#Объектов_внешнего_транспорта
+:Объектов_внешнего_транспорта rdf:type owl:NamedIndividual ,
+                                       :E03_ZoneType .
+
+
+###  https://w3id.org/cityont#Охрана_природных_территорий
+:Охрана_природных_территорий rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont#ПРЗУ
+:ПРЗУ rdf:type owl:NamedIndividual ,
+               :E13_ConstructionParam_MaxSize ;
+      rdfs:label "Предельный размер земельного участка" .
+
+
+###  https://w3id.org/cityont#Производственная
+:Производственная rdf:type owl:NamedIndividual ,
+                           :E03_ZoneType ;
+                  rdfs:comment """Производственные зоны предназначены для размещения промышленных, коммунальных и складских объектов и объектов инженерной и транспортной инфраструктуры для обеспечения деятельности производственных объектов.
+В производственную зону включается и территория санитарно-защитных зон самих объектов.
+Собственники производственных объектов за счёт собственных средств проводят благоустройство территории производственной зоны.
+В санитарно-защитной зоне промышленных, коммунальных и складских объектов не допускается размещение жилых домов, дошкольных образовательных и образовательных учреждений, а также учреждений здравоохранения, отдыха, физкультурно-оздоровительных и спортивных сооружений, садоводческих, дачных и огороднических кооперативов и производство сельскохозяйственной продукции.
+Источник: https://www.zemvopros.ru/page_4603.htm""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_АВО
+:Разрешение_Т3Ж2_ВИТ_АВО rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#амбулаторное_ветеринарное_обслуживание> ;
+                         :hasPermitType :Разрешенный ;
+                         :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_БСД
+:Разрешение_Т3Ж2_ВИТ_БСД rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#банковская_и_страховая_деятельность> ;
+                         :hasPermitType :Разрешенный ;
+                         :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ,
+                                              <https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м> ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: банковская и страховая деятельность ."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ГО
+:Разрешение_Т3Ж2_ВИТ_ГО rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        :hasLandUseType <https://w3id.org/cityont/kvrizy#гостиничное_обслуживание> ;
+                        :hasPermitType :Условно-разрешенный ;
+                        :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: гостиничное обслуживание."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ЗУОП
+:Разрешение_Т3Ж2_ВИТ_ЗУОП rdf:type owl:NamedIndividual ,
+                                   :Разрешение_Вид_использования_территорий ;
+                          :hasLandUseType <https://w3id.org/cityont/kvrizy#земельные_участки_территории_общего_пользования> ;
+                          :hasPermitType :Разрешенный ;
+                          rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: земельные участки (территории) общего пользования."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_КО
+:Разрешение_Т3Ж2_ВИТ_КО rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        :hasLandUseType <https://w3id.org/cityont/kvrizy#коммунальное_обслуживание> ;
+                        :hasPermitType :Разрешенный ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: коммунальное обслуживание."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_КР
+:Разрешение_Т3Ж2_ВИТ_КР rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: культурное развитие."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_МЖЗ
+:Разрешение_Т3Ж2_ВИТ_МЖЗ rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#многоэтажная_жилая_застройка_высотная_застройка> ;
+                         :hasPermitType :Разрешенный ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: многоэтажная жилая застройка.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Магазины
+:Разрешение_Т3Ж2_ВИТ_Магазины rdf:type owl:NamedIndividual ,
+                                       :Разрешение_Вид_использования_территорий ;
+                              :hasLandUseType <https://w3id.org/cityont/kvrizy#магазины> ;
+                              :hasPermitType :Разрешенный ;
+                              :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                              rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: магазины.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОВП
+:Разрешение_Т3Ж2_ВИТ_ОВП rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#обеспечение_внутреннего_правопорядка> ;
+                         :hasPermitType :Разрешенный ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: Обеспечение внутреннего правопорядка."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОГН
+:Разрешение_Т3Ж2_ВИТ_ОГН rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#хранение_автотранспорта> ;
+                         :hasPermitType :Разрешенный ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: объекты гаражного назначения.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОП
+:Разрешение_Т3Ж2_ВИТ_ОП rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        :hasLandUseType <https://w3id.org/cityont/kvrizy#общественное_питание> ;
+                        :hasPermitType :Разрешенный ;
+                        :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ,
+                                             <https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м> ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: общественное питание."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОПС
+:Разрешение_Т3Ж2_ВИТ_ОПС rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#объекты_дорожного_сервиса> ;
+                         :hasPermitType :Условно-разрешенный ;
+                         :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: объекты придорожного сервиса."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_ОУ
+:Разрешение_Т3Ж2_ВИТ_ОУ rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        :hasLandUseType <https://w3id.org/cityont/kvrizy#общественное_управление> ;
+                        :hasPermitType :Разрешенный ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: общественное управление."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_РИ
+:Разрешение_Т3Ж2_ВИТ_РИ rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        :hasLandUseType <https://w3id.org/cityont/kvrizy#религиозное_использование> ;
+                        :hasPermitType :Условно-разрешенный ;
+                        :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: религиозное использование."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Рынки
+:Разрешение_Т3Ж2_ВИТ_Рынки rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Вид_использования_территорий ;
+                           :hasLandUseType <https://w3id.org/cityont/kvrizy#рынки> ;
+                           :hasPermitType :Разрешенный ;
+                           :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ,
+                                                <https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м> ;
+                           rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: рынки."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_СЖЗ
+:Разрешение_Т3Ж2_ВИТ_СЖЗ rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#среднеэтажная_жилая_застройка> ;
+                         :hasPermitType :Разрешенный ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: среднеэтажная жилая застройка.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_СМО
+:Разрешение_Т3Ж2_ВИТ_СМО rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#стационарное_медицинское_обслуживание> ;
+                         :hasPermitType :Условно-разрешенный ;
+                         :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: стационарное медицинское обслуживание."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Связь
+:Разрешение_Т3Ж2_ВИТ_Связь rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Вид_использования_территорий ;
+                           :hasLandUseType <https://w3id.org/cityont/kvrizy#связь> ;
+                           :hasPermitType :Разрешенный ;
+                           :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                           rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: связь."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ВИТ_Соц_Обс
+:Разрешение_Т3Ж2_ВИТ_Соц_Обс rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#социальное_обслуживание> ;
+                             :hasPermitType :Разрешенный ;
+                             :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                             rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: социальное обслуживания.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ
+:Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Параметры_разрешенного_строительства ;
+                             :hasContructionParam :КИТ_для_земельных_участков_МВЖЗ ;
+                             :hasConstructionTypeValue "2.0"^^xsd:double ;
+                             rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: коэффицент использования территории для многоэтажной жилой застройки.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_КИТ_СЖЗ
+:Разрешение_Т3Ж2_ПРС_КИТ_СЖЗ rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Параметры_разрешенного_строительства ;
+                             :hasContructionParam :КИТ_для_земельных_участков_СЖЗ ;
+                             :hasConstructionTypeValue "1,7" ;
+                             rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: коэффицент использования территории для среднеэтажной жилой застройки.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МВЗКЛ
+:Разрешение_Т3Ж2_ПРС_МВЗКЛ rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Параметры_разрешенного_строительства ;
+                           :hasContructionParam :МВЗКЛ ;
+                           :hasConstructionTypeValue "Максимальные выступы за красную линию (за исключением красных линий внутриквартальных проездов) частей зданий, строений и сооружений допускаются в отношении балконов, эркеров, козырьков - не более 3 метров и выше 3,5 метров от уровня земли. При этом суммарная ширина всех эркеров в каждом этаже не должна превышать 30% ширины фасада здания, выходящего на красную линию, в этом этаже." ;
+                           rdfs:comment """Разрешение для участка Т2Ж3.
+Параметр разрешенного строительства: максимальные выступы за красную линию.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МКО
+:Разрешение_Т3Ж2_ПРС_МКО rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Параметры_разрешенного_строительства ;
+                         :hasContructionParam :МКО ;
+                         :hasConstructionTypeValue "V" ;
+                         rdfs:comment """Разрешение для участка Т2Ж3.
+Параметр разрешенного строительства: максимальный класс опасности.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МКЭ
+:Разрешение_Т3Ж2_ПРС_МКЭ rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Параметры_разрешенного_строительства ;
+                         :hasContructionParam :МКЭ ;
+                         :hasConstructionTypeValue "не устанавливается" ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: максимальное количество этажей.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_МОЗ_БП
+:Разрешение_Т3Ж2_ПРС_МОЗ_БП rdf:type owl:NamedIndividual ,
+                                     :Разрешение_Параметры_разрешенного_строительства ;
+                            :hasContructionParam :Минимальный_отступ_от_зданий_без_проемов ;
+                            :hasConstructionTypeValue "0.0"^^xsd:double .
+
+
+###  https://w3id.org/cityont#Разрешение_Т3Ж2_ПРС_ПРЗУ
+:Разрешение_Т3Ж2_ПРС_ПРЗУ rdf:type owl:NamedIndividual ,
+                                   :Разрешение_Параметры_разрешенного_строительства ;
+                          :hasContructionParam :ПРЗУ ;
+                          :hasConstructionTypeValue "Не может быть менее площади, занимаемой существующим или размещаемым в его границах объектом капитального строительства и обеспечивающей соблюдение установленных настоящими Правилами предельных параметров разрешенного строительства, реконструкции объектов капитального строительства, в том числе минимальной доли озеленения земельных участков, минимального количества машино-мест для хранения автотранспорта на земельных участках, а также соблюдение строительных, экологических, санитарно-гигиенических, противопожарных и иных правил, нормативов." ;
+                          rdfs:comment """Разрешение для участка Т3Ж2.
+Параметр разрешенного строительства: предельный размер земельного участка.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_АПО
+:Разрешение_ТЗЖ2_ВИТ_АПО rdf:type owl:NamedIndividual ,
+                                  :Разрешение_Вид_использования_территорий ;
+                         :hasLandUseType <https://w3id.org/cityont/kvrizy#амбулаторно-поликлиническое_обслуживание> ;
+                         :hasPermitType :Разрешенный ;
+                         :hasSpecialCondition :Условие_о_строительстве_рядом_с_красными_линиями ;
+                         rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: амбулаторно-поликлиническое обслуживание."""^^rdfs:Literal .
+
+
+###  https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_БО
+:Разрешение_ТЗЖ2_ВИТ_БО rdf:type owl:NamedIndividual ,
+                                 :Разрешение_Вид_использования_территорий ;
+                        rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: бытовое обслуживание.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_ДНСОО
+:Разрешение_ТЗЖ2_ВИТ_ДНСОО rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Вид_использования_территорий ;
+                           :hasLandUseType <https://w3id.org/cityont/kvrizy#дошкольное_начальное_и_среднее_общее_образование> ;
+                           :hasPermitType :Разрешенный ;
+                           rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: 'Дошкольное, начальное и среднее общее образование'.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТЗЖ2_ВИТ_Спорт
+:Разрешение_ТЗЖ2_ВИТ_Спорт rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Вид_использования_территорий ;
+                           :hasLandUseType <https://w3id.org/cityont/kvrizy#спорт> ;
+                           :hasPermitType :Разрешенный ;
+                           rdfs:comment """Разрешение для участка Т3Ж2.
+Вид использования территории: спорт.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_АвтоСтройПром
+:Разрешение_ТПД2_1_ВИТ_АвтоСтройПром rdf:type owl:NamedIndividual ,
+                                              :Разрешение_Вид_использования_территорий ;
+                                     :hasLandUseType <https://w3id.org/cityont/kvrizy#автомобилестроительная_промышленность> ;
+                                     :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_АвтоТранс
+:Разрешение_ТПД2_1_ВИТ_АвтоТранс rdf:type owl:NamedIndividual ,
+                                          :Разрешение_Вид_использования_территорий ;
+                                 :hasLandUseType <https://w3id.org/cityont/kvrizy#автодорожный_транспорт> ;
+                                 :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ВетОб
+:Разрешение_ТПД2_1_ВИТ_ВетОб rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#ветериарное_обслуживание> ;
+                             :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ВодТранс
+:Разрешение_ТПД2_1_ВИТ_ВодТранс rdf:type owl:NamedIndividual ,
+                                         :Разрешение_Вид_использования_территорий ;
+                                :hasLandUseType <https://w3id.org/cityont/kvrizy#водный_транспорт> ;
+                                :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ГидроТехСооруж
+:Разрешение_ТПД2_1_ВИТ_ГидроТехСооруж rdf:type owl:NamedIndividual ,
+                                               :Разрешение_Вид_использования_территорий ;
+                                      :hasLandUseType <https://w3id.org/cityont/kvrizy#гидротехнические_сооружения> ;
+                                      :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ДелУп
+:Разрешение_ТПД2_1_ВИТ_ДелУп rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#ветериарное_обслуживание> ;
+                             :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЖелСерв
+:Разрешение_ТПД2_1_ВИТ_ЖелСерв rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#железнодорожный_сервис> ;
+                               :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЗУТОП
+:Разрешение_ТПД2_1_ВИТ_ЗУТОП rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#земельные_участки_территории_общего_пользования> ;
+                             :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_КО
+:Разрешение_ТПД2_1_ВИТ_КО rdf:type owl:NamedIndividual ,
+                                   :Разрешение_Вид_использования_территорий ;
+                          :hasLandUseType <https://w3id.org/cityont/kvrizy#коммунальное_обслуживание> ;
+                          :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЛегПром
+:Разрешение_ТПД2_1_ВИТ_ЛегПром rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#легкая_промышленность> ;
+                               :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Магазины
+:Разрешение_ТПД2_1_ВИТ_Магазины rdf:type owl:NamedIndividual ,
+                                         :Разрешение_Вид_использования_территорий ;
+                                :hasLandUseType <https://w3id.org/cityont/kvrizy#магазины> ;
+                                :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_НефтХимПром
+:Разрешение_ТПД2_1_ВИТ_НефтХимПром rdf:type owl:NamedIndividual ,
+                                            :Разрешение_Вид_использования_территорий ;
+                                   :hasLandUseType <https://w3id.org/cityont/kvrizy#нефтехимическая_промышленность> ;
+                                   :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОВПП
+:Разрешение_ТПД2_1_ВИТ_ОВПП rdf:type owl:NamedIndividual ,
+                                     :Разрешение_Вид_использования_территорий ;
+                            :hasLandUseType <https://w3id.org/cityont/kvrizy#обеспечение_внутренного_правопорядка> ;
+                            :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОДВОГидметео
+:Разрешение_ТПД2_1_ВИТ_ОДВОГидметео rdf:type owl:NamedIndividual ,
+                                             :Разрешение_Вид_использования_территорий ;
+                                    :hasLandUseType <https://w3id.org/cityont/kvrizy#ообеспечение_деятельности_в_области_гидрометеорологии_и_смежных_с_ней_областях> ;
+                                    :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ОПридСер
+:Разрешение_ТПД2_1_ВИТ_ОПридСер rdf:type owl:NamedIndividual ,
+                                         :Разрешение_Вид_использования_территорий ;
+                                :hasLandUseType <https://w3id.org/cityont/kvrizy#объекты_придорожного_сервиса> ;
+                                :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПД
+:Разрешение_ТПД2_1_ВИТ_ПД rdf:type owl:NamedIndividual ,
+                                   :Разрешение_Вид_использования_территорий ;
+                          :hasLandUseType <https://w3id.org/cityont/kvrizy#производственная_деятельность> ;
+                          :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПищПром
+:Разрешение_ТПД2_1_ВИТ_ПищПром rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#пищевая_промышленность> ;
+                               :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ПричДМС
+:Разрешение_ТПД2_1_ВИТ_ПричДМС rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#причалы_для_маломерных_судов> ;
+                               :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_РитУсл
+:Разрешение_ТПД2_1_ВИТ_РитУсл rdf:type owl:NamedIndividual ,
+                                       :Разрешение_Вид_использования_территорий ;
+                              :hasLandUseType <https://w3id.org/cityont/kvrizy#ритуальные_услуги> ;
+                              :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Рынки
+:Разрешение_ТПД2_1_ВИТ_Рынки rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#рынки> ;
+                             :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Связь
+:Разрешение_ТПД2_1_ВИТ_Связь rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#связь> ;
+                             :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Склады
+:Разрешение_ТПД2_1_ВИТ_Склады rdf:type owl:NamedIndividual ,
+                                       :Разрешение_Вид_использования_территорий ;
+                              :hasLandUseType <https://w3id.org/cityont/kvrizy#склады> ;
+                              :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_СлГараж
+:Разрешение_ТПД2_1_ВИТ_СлГараж rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#служебные_гаражи> ;
+                               :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_СтройПром
+:Разрешение_ТПД2_1_ВИТ_СтройПром rdf:type owl:NamedIndividual ,
+                                          :Разрешение_Вид_использования_территорий ;
+                                 :hasLandUseType <https://w3id.org/cityont/kvrizy#строительная_промышленность> ;
+                                 :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ТрубопрТранс
+:Разрешение_ТПД2_1_ВИТ_ТрубопрТранс rdf:type owl:NamedIndividual ,
+                                             :Разрешение_Вид_использования_территорий ;
+                                    :hasLandUseType <https://w3id.org/cityont/kvrizy#трубопроводный_транспорт> ;
+                                    :hasPermitType :Условно-разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ТяжПром
+:Разрешение_ТПД2_1_ВИТ_ТяжПром rdf:type owl:NamedIndividual ,
+                                        :Разрешение_Вид_использования_территорий ;
+                               :hasLandUseType <https://w3id.org/cityont/kvrizy#тяжелая_промышленность> ;
+                               :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ФармПром
+:Разрешение_ТПД2_1_ВИТ_ФармПром rdf:type owl:NamedIndividual ,
+                                         :Разрешение_Вид_использования_территорий ;
+                                :hasLandUseType <https://w3id.org/cityont/kvrizy#фармацевтическая_промышленность> ;
+                                :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром
+:Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром rdf:type owl:NamedIndividual ,
+                                             :Разрешение_Вид_использования_территорий ;
+                                    :hasLandUseType <https://w3id.org/cityont/kvrizy#целлюлозно-бумажная_промышленность> ;
+                                    :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ВИТ_Энерг
+:Разрешение_ТПД2_1_ВИТ_Энерг rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Вид_использования_территорий ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#энергетика> ;
+                             :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МВЗКЛ
+:Разрешение_ТПД2_1_ПРС_МВЗКЛ rdf:type owl:NamedIndividual ,
+                                      :Разрешение_Параметры_разрешенного_строительства ;
+                             :hasContructionParam :МВЗКЛ ;
+                             :hasConstructionTypeValue "Максимальные выступы за красную линию (за исключением красных линий внутриквартальных проездов) частей зданий, строений и сооружений допускаются в отношении балконов, эркеров, козырьков - не более 3 метров и выше 3,5 метров от уровня земли. При этом суммарная ширина всех эркеров в каждом этаже не должна превышать 30% ширины фасада здания, выходящего на красную линию, в этом этаже." ;
+                             rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: максимальные выступы за красную линию.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов
+:Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов rdf:type owl:NamedIndividual ,
+                                                    :Разрешение_Параметры_разрешенного_строительства ;
+                                           :hasContructionParam :МКМДХГТ_для_Складов ;
+                                           :hasConstructionTypeValue "Одно место для объектов общей площадью от 100 квадратных метров до 1250 квадратных метров и плюс одно место на каждые дополнительные 1250 квадратных метров общей площади объектов." ;
+                                           rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства:  минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"склады\" (код 6.9).""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_остальных_ВИТ
+:Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_остальных_ВИТ rdf:type owl:NamedIndividual ,
+                                                          :Разрешение_Параметры_разрешенного_строительства ;
+                                                 :hasContructionParam :МКМДХГТ_для_остальных_ВИТ ;
+                                                 :hasConstructionTypeValue "Одно место для объектов общей площадью от 100 квадратных метров до 1500 квадратных метров и плюс одно место на каждые дополнительные 1500 квадратных метров общей площади объектов." ;
+                                                 rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства:  минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"рынки\" (код 4.3), \"магазины\" (код 4.4), \"общественное питание\" (код 4.6), \"производственная деятельность\" (код 6.0), \"хранение и переработка сельскохозяйственной продукции\" (код 1.15), \"обеспечение сельскохозяйственного производства\" (код 1.18).""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти
+:Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти rdf:type owl:NamedIndividual ,
+                                                                            :Разрешение_Параметры_разрешенного_строительства ;
+                                                                   :hasContructionParam :МКМДХГТ_площадь_не_примыкакают_к_проезчасти ;
+                                                                   :hasConstructionTypeValue "95 квадратных метров на автомобиль (с учетом проездов)." ;
+                                                                   rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"рынки\" (код 4.3), \"магазины\" (код 4.4), \"общественное питание\" (код 4.6), \"производственная деятельность\" (код 6.0), \"хранение и переработка сельскохозяйственной продукции\" (код 1.15), \"обеспечение сельскохозяйственного производства\" (код 1.18).""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти
+:Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти rdf:type owl:NamedIndividual ,
+                                                                         :Разрешение_Параметры_разрешенного_строительства ;
+                                                                :hasContructionParam :МКМДХГТ_площадь_примыкакают_к_проезчасти ;
+                                                                :hasConstructionTypeValue "При примыкании участков для стоянки к проезжей части улиц и проездов и продольном расположении автомобилей - 70 квадратных метров на автомобиль." ;
+                                                                rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: минимальное количество мест для хранения (технологического отстоя) грузового автотранспорта на земельных участках для \"рынки\" (код 4.3), \"магазины\" (код 4.4), \"общественное питание\" (код 4.6), \"производственная деятельность\" (код 6.0), \"хранение и переработка сельскохозяйственной продукции\" (код 1.15), \"обеспечение сельскохозяйственного производства\" (код 1.18).""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКО
+:Разрешение_ТПД2_1_ПРС_МКО rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Параметры_разрешенного_строительства ;
+                           :hasContructionParam :МКО ;
+                           :hasConstructionTypeValue "II" ;
+                           rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: максимальный класс опасности.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МКЭ
+:Разрешение_ТПД2_1_ПРС_МКЭ rdf:type owl:NamedIndividual ,
+                                    :Разрешение_Параметры_разрешенного_строительства ;
+                           :hasContructionParam :МКЭ ;
+                           :hasConstructionTypeValue "не устанавливается" ;
+                           rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: максимальное количество этажей.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_МООГУССКЛ
+:Разрешение_ТПД2_1_ПРС_МООГУССКЛ rdf:type owl:NamedIndividual ,
+                                          :Разрешение_Параметры_разрешенного_строительства ;
+                                 :hasContructionParam :МООГУССКЛ ;
+                                 :hasConstructionTypeValue "6 метров" ;
+                                 rdfs:comment """Разрешение для участка ТПД2_1.
+Параметр разрешенного строительства: Минимальные отступы от границ земельных участков стен зданий, строений и сооружений по границам земельных участков, совпадающим с внутриквартальными проездами и(или) красными линиями указанных проездов.""" .
+
+
+###  https://w3id.org/cityont#Разрешение_ТПД2_1_ПРС_ПРЗУ
+:Разрешение_ТПД2_1_ПРС_ПРЗУ rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont#Разрешение_ТР3-2_ВИТ_ОГН
+:Разрешение_ТР3-2_ВИТ_ОГН rdf:type owl:NamedIndividual ;
+                          :hasLandUseType <https://w3id.org/cityont/kvrizy#хранение_автотранспорта> ;
+                          :hasPermitType :Разрешенный .
+
+
+###  https://w3id.org/cityont#Разрешение_ТР3-2_ПРС_Набор1
+:Разрешение_ТР3-2_ПРС_Набор1 rdf:type owl:NamedIndividual ;
+                             :hasContructionParam :Набор_параметров_1 ;
+                             :hasLandUseType <https://w3id.org/cityont/kvrizy#многоэтажная_жилая_застройка_высотная_застройка> ,
+                                             <https://w3id.org/cityont/kvrizy#среднеэтажная_жилая_застройка> ;
+                             :hasPermitType :Разрешенный ;
+                             :hasConstructionTypeValue """- Малоэтажная
+- многоквартирная жилая застройка, среднеэтажная жилая застройка, многоэтажная
+- жилая застройка (высотная застройка)""" .
+
+
+###  https://w3id.org/cityont#Разрешенный
+:Разрешенный rdf:type owl:NamedIndividual ,
+                      :E07_PermissionTypeLandUse ;
+             rdfs:label "Основной разрешенный" .
+
+
+###  https://w3id.org/cityont#Рекреационного_назначения
+:Рекреационного_назначения rdf:type owl:NamedIndividual ,
+                                    :E03_ZoneType ;
+                           rdfs:comment """Предназначены для организации мест отдыха населения - парки, сады, городские леса, лесопарки, пляжи и иные объекты.
+В рекреационные зоны могут включаться особо охраняемые природные территории и природные объекты.
+На территории рекреационных зон не допускается строительство и расширение действующих промышленных, коммунальных и складских объектов.
+Исключение составляют промышленные, коммунальные и складские объекты, непосредственно связанные с эксплуатацией объектов оздоровительного и рекреационного назначения.
+Источник: https://www.zemvopros.ru/page_4603.htm""" ,
+                                        "Рекреационная" .
+
+
+###  https://w3id.org/cityont#Сельскохозяйственного_использования
+:Сельскохозяйственного_использования rdf:type owl:NamedIndividual ,
+                                              :E03_ZoneType ;
+                                     rdfs:comment """В пределах границ (черты) городских и сельских поселений выделяются зоны сельскохозяйственного использования - пашни, сады, виноградники, огороды, сенокосы, пастбища, а также занятые сельскохозяйственными зданиями, строениями, сооружениями.
+Территории таких зон могут использоваться для ведения сельского хозяйства до момента изменения вида их использования в соответствии с генеральным планом и правилами застройки.
+Источник: https://www.zemvopros.ru/page_4603.htm""" .
+
+
+###  https://w3id.org/cityont#Специального_назначения
+:Специального_назначения rdf:type owl:NamedIndividual ,
+                                  :E03_ZoneType ;
+                         rdfs:comment """Выделяются для размещения кладбищ, крематориев, свалок бытовых отходов и иных объектов, использование которых несовместимо с использованием других территориальных зон городских и сельских поселений.
+Использование таких зон регламентируется требованиями специальных нормативов.
+Источник: https://www.zemvopros.ru/page_4603.htm""" ;
+                         rdfs:label "Специального назначения" .
+
+
+###  https://w3id.org/cityont#Т1Ж1
+:Т1Ж1 rdf:type owl:NamedIndividual ,
+               :E01_Zone ;
+      :hasZoneType :Жилая ;
+      rdfs:comment """зона коллективных садоводств с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры.
+
+Цели выделения зоны: 
+- развитие существующих территорий, включающих сезонное жилье, с формированием на их основе жилых зон рекреационного типа для комфортного сезонного проживания, обеспеченных необходимой инженерной инфраструктурой, объектами социального и культурно-бытового обслуживания; 
+- формирование условий для возможности круглогодичного проживания.""" .
+
+
+###  https://w3id.org/cityont#Т1Ж2-1
+:Т1Ж2-1 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Жилая ;
+        rdfs:comment """жилая зона индивидуальных (одноквартирных) жилых домов (отдельно стоящих и (или) блокированных) с участками не менее 150 квадратных метров с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры.
+
+Цели выделения зоны: 
+- развитие на основе существующих и вновь осваиваемых территорий малоэтажной жилой застройки зон комфортного жилья, включающих отдельно стоящие и блокированные жилые дома;
+- развитие сферы социального и культурно-бытового обслуживания, обеспечивающей потребности жителей указанных территорий, в соответствующих среде формах;
+- создание условий для размещения необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#Т1Ж2-2
+:Т1Ж2-2 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Жилая ;
+        rdfs:comment """жилая зона индивидуальных (одноквартирных) отдельно стоящих жилых домов с участками не менее 1200 квадратных метров с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+- развитие на основе существующих и вновь осваиваемых территорий малоэтажной жилой застройки зон комфортного жилья, включающих отдельно стоящие индивидуальные (одноквартирные) жилые дома коттеджного (усадебного) типа;
+- развитие сферы социального и культурно-бытового обслуживания, обеспечивающей потребности жителей указанных территорий, в соответствующих среде формах;
+- создание условий для размещения необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#Т2Ж1
+:Т2Ж1 rdf:type owl:NamedIndividual ,
+               :E01_Zone ;
+      :hasZoneType :Жилая ;
+      rdfs:comment """жилая зона малоэтажных многоквартирных жилых домов, расположенных вне территории исторической застройки пригородов с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+- развитие на основе существующих и вновь осваиваемых территорий жилой застройки зон комфортного малоэтажного преимущественно многоквартирного жилья;
+- развитие сферы социального и культурно-бытового обслуживания, обеспечивающей потребности жителей указанных территорий, в соответствующих среде формах;
+- размещение необходимых объектов инженерной и транспортной инфраструктуры.""" .
+
+
+###  https://w3id.org/cityont#Т2ЖД2
+:Т2ЖД2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Жилая ;
+       rdfs:comment """Многофункциональная зона малоэтажных многоквартирных жилых домов и объектов общественно-деловой застройки, расположенных в границах исторической застройки пригородов с включением объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+развитие существующих и преобразуемых территорий, расположенных в границах исторической застройки пригородов, предназначенных для жилой застройки в сочетании с объектами общественно-делового назначения, не оказывающими негативного воздействия на окружающую среду;
+-развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+-развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#Т3Ж1
+:Т3Ж1 rdf:type owl:NamedIndividual ,
+               :E01_Zone ;
+      :hasZoneType :Жилая ;
+      rdfs:comment """Жилая зона среднеэтажных многоквартирных жилых домов, расположенных вне исторически сложившихся районов центральной части Санкт-Петербурга с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цели выделения зоны:
+-развитие на основе существующих и вновь осваиваемых территорий многоквартирной среднеэтажной жилой застройки зон комфортного среднеэтажного многоквартирного жилья;
+-развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+-размещение необходимых объектов инженерной и транспортной инфраструктуры;
+-развитие объектов общественно-деловой застройки в соответствующих среде формах и объемах, не оказывающих негативного воздействия на объекты жилой застройки.""" .
+
+
+###  https://w3id.org/cityont#Т3Ж2
+:Т3Ж2 rdf:type owl:NamedIndividual ,
+               :E01_Zone ;
+      :hasPermit :Разрешение_Т3Ж2_ВИТ_АВО ,
+                 :Разрешение_Т3Ж2_ВИТ_БСД ,
+                 :Разрешение_Т3Ж2_ВИТ_ГО ,
+                 :Разрешение_Т3Ж2_ВИТ_ЗУОП ,
+                 :Разрешение_Т3Ж2_ВИТ_КО ,
+                 :Разрешение_Т3Ж2_ВИТ_КР ,
+                 :Разрешение_Т3Ж2_ВИТ_МЖЗ ,
+                 :Разрешение_Т3Ж2_ВИТ_Магазины ,
+                 :Разрешение_Т3Ж2_ВИТ_ОВП ,
+                 :Разрешение_Т3Ж2_ВИТ_ОГН ,
+                 :Разрешение_Т3Ж2_ВИТ_ОП ,
+                 :Разрешение_Т3Ж2_ВИТ_ОПС ,
+                 :Разрешение_Т3Ж2_ВИТ_ОУ ,
+                 :Разрешение_Т3Ж2_ВИТ_РИ ,
+                 :Разрешение_Т3Ж2_ВИТ_Рынки ,
+                 :Разрешение_Т3Ж2_ВИТ_СЖЗ ,
+                 :Разрешение_Т3Ж2_ВИТ_СМО ,
+                 :Разрешение_Т3Ж2_ВИТ_Связь ,
+                 :Разрешение_Т3Ж2_ВИТ_Соц_Обс ,
+                 :Разрешение_Т3Ж2_ПРС_КИТ_МЖЗ ,
+                 :Разрешение_Т3Ж2_ПРС_КИТ_СЖЗ ,
+                 :Разрешение_Т3Ж2_ПРС_МВЗКЛ ,
+                 :Разрешение_Т3Ж2_ПРС_МКО ,
+                 :Разрешение_Т3Ж2_ПРС_МКЭ ,
+                 :Разрешение_Т3Ж2_ПРС_МОЗ_БП ,
+                 :Разрешение_Т3Ж2_ПРС_ПРЗУ ,
+                 :Разрешение_ТЗЖ2_ВИТ_АПО ,
+                 :Разрешение_ТЗЖ2_ВИТ_БО ,
+                 :Разрешение_ТЗЖ2_ВИТ_ДНСОО ,
+                 :Разрешение_ТЗЖ2_ВИТ_Спорт ;
+      :hasZoneType :Жилая ;
+      rdfs:comment """Градостроительный регламент жилой зоны среднеэтажных и многоэтажных многоквартирных жилых домов, расположенных вне территории исторически сложившихся районов центральной части Санкт-Петербурга с включением объектов социально-культурного и коммунально-бытового назначения, связанных с проживанием граждан, а также объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цели выделения зоны:
+-         развитие на основе существующих и вновь осваиваемых территорий многоквартирной среднеэтажной и многоэтажной жилой застройки зон комфортного многоквартирного жилья;
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+-         развитие необходимых объектов инженерной и транспортной инфраструктур;
+-         развитие объектов общественно-деловой застройки в соответствующих среде формах и объемах, не оказывающих негативного воздействия на объекты жилой застройки.""" .
+
+
+###  https://w3id.org/cityont#Т3ЖД3
+:Т3ЖД3 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Жилая ;
+       rdfs:comment """Градостроительный регламент многофункциональной зоны среднеэтажных и многоэтажных многоквартирных жилых домов, объектов общественно-деловой застройки, расположенных на территории исторически сложившихся районов Санкт-Петербурга (за исключением исторической застройки пригородов) с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цели выделения зоны:
+-         развитие существующих и преобразуемых территорий, расположенных на территории исторического центра Санкт-Петербурга, предназначенных для жилой застройки в сочетании с объектами общественно-делового назначения, не оказывающими негативного воздействия на объекты жилой застройки;
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+-         развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТД1-1_1
+:ТД1-1_1 rdf:type owl:NamedIndividual ,
+                  :E01_Zone ;
+         :hasZoneType :Общественно-деловая ;
+         rdfs:comment """Общественно-деловая подзона объектов многофункциональной общественно-деловой застройки и жилых домов, расположенных на территории исторически сложившихся районов Санкт-Петербурга с включением объектов инженерной инфраструктуры.
+          
+Цели выделения зоны:
+
+-         развитие существующих и преобразуемых территорий (включающих исторический центр Санкт-Петербурга и историческую застройку пригородов), предназначенных для размещения общественно-деловых объектов, с формированием на их основе комплексных многофункциональных зон общественно-деловой и сочетающейся с ней жилой застройки;
+
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+
+-         развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТД1-1_2
+:ТД1-1_2 rdf:type owl:NamedIndividual ,
+                  :E01_Zone ;
+         :hasZoneType :Общественно-деловая ;
+         rdfs:comment """Общественно-деловая подзона объектов многофункциональной общественно-деловой застройки и жилых домов, расположенных на территории исторической застройки пригородов с включением объектов инженерной инфраструктуры.
+          
+Цели выделения зоны:
+
+-         развитие существующих и преобразуемых территорий (включающих исторический центр Санкт-Петербурга и историческую застройку пригородов), предназначенных для размещения общественно-деловых объектов, с формированием на их основе комплексных многофункциональных зон общественно-деловой и сочетающейся с ней жилой застройки;
+
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+
+-         развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТД1-2_1
+:ТД1-2_1 rdf:type owl:NamedIndividual ,
+                  :E01_Zone ;
+         :hasZoneType :Общественно-деловая ;
+         rdfs:comment """общественно-деловая подзона объектов многофункциональной общественно-деловой застройки и жилых домов в периферийных и пригородных районах Санкт-Петербурга, расположенных в зоне влияния Кольцевой автомобильной дороги вокруг Санкт-Петербурга и вылетных магистралей с включением объектов инженерной инфраструктуры.
+          
+Цель выделения зоны:
+
+-         существующих и преобразуемых территорий в периферийных и пригородных районах города, предназначенных для размещения общественно-деловых объектов, с формированием на их основе комплексных многофункциональных зон общественно-деловой и сочетающейся с ней жилой застройки;
+
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+
+-         развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТД1-2_2
+:ТД1-2_2 rdf:type owl:NamedIndividual ,
+                  :E01_Zone ;
+         :hasZoneType :Общественно-деловая ;
+         rdfs:comment """Общественно-деловая подзона объектов многофункциональной общественно-деловой застройки и жилых домов в периферийных и пригородных районах Санкт-Петербурга, расположенных вне зоны влияния Кольцевой автомобильной дороги вокруг Санкт-Петербурга и вылетных магистралей с включением объектов инженерной инфраструктуры.
+          
+Цель выделения зоны:
+
+-         существующих и преобразуемых территорий в периферийных и пригородных районах города, предназначенных для размещения общественно-деловых объектов, с формированием на их основе комплексных многофункциональных зон общественно-деловой и сочетающейся с ней жилой застройки;
+
+-         развитие сферы социального и культурно-бытового обслуживания для обеспечения потребностей жителей указанных территорий, в соответствующих среде формах;
+
+-         развитие необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТД2_1
+:ТД2_1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Общественно-деловая ;
+       rdfs:comment """Общественно-деловая подзона специализированных общественно-деловых объектов, расположенных на территории исторически сложившихся районов Санкт-Петербурга с включением объектов инженерной инфраструктуры.
+          
+Цель выделения зоны - создание условий для формирования зон для размещения специализированных общественно-деловых объектов, преимущественно некоммерческого назначения.""" .
+
+
+###  https://w3id.org/cityont#ТД2_2
+:ТД2_2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Общественно-деловая ;
+       rdfs:comment """Общественно-деловая подзона специализированных общественно-деловых объектов, расположенных на территории периферийных и пригородных (включая исторически сложившиеся) районов Санкт-Петербурга с включением объектов инженерной инфраструктуры.
+          
+Цель выделения зоны – создание условий для формирования зон для размещения специализированных общественно-деловых объектов, преимущественно некоммерческого назначения.""" .
+
+
+###  https://w3id.org/cityont#ТИ1-1
+:ТИ1-1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Инженерной_и_траснпортной_инфраструктуры ;
+       rdfs:comment """Зона объектов инженерной и транспортной инфраструктур, коммунальных объектов, объектов санитарной очистки с включением складских и производственных объектов IV и V класса опасности.
+
+Цель выделения зоны – формирование комплексов объектов городской инженерной и транспортной инфраструктур не выше IV класса опасности, с низкими уровнями шума и загрязнения.""" .
+
+
+###  https://w3id.org/cityont#ТИ1-2
+:ТИ1-2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Инженерной_и_траснпортной_инфраструктуры ;
+       rdfs:comment """Зона объектов инженерной и транспортной инфраструктур, коммунальных объектов, объектов санитарной очистки II и III класса опасности.
+
+Цель выделения зоны – формирование комплексов объектов городской инженерной и транспортной инфраструктур II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения.""" .
+
+
+###  https://w3id.org/cityont#ТИ2
+:ТИ2 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Объектов_внешнего_транспорта ;
+     rdfs:comment """Зона объектов воздушного транспорта с включением объектов общественно-деловой застройки и объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+-         развитие объектов воздушного транспорта в соответствии с их технологическими потребностями и условиями размещения на территории города;
+-         развитие комплексов пассажирских и грузовых терминалов, оснащенных всеми необходимыми для качественного выполнения основных функций технологическими и социальными объектами.""" .
+
+
+###  https://w3id.org/cityont#ТИ3
+:ТИ3 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Объектов_внешнего_транспорта ;
+     rdfs:comment """Зона объектов железнодорожного транспорта с включением объектов общественно-деловой застройки и объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+-         развитие объектов железнодорожного транспорта в соответствии с их технологическими потребностями и условиями размещения на территории города;
+-         развитие комплексов пассажирских и грузовых терминалов, оснащенных всеми необходимыми для качественного выполнения основных функций технологическими и социальными объектами.""" .
+
+
+###  https://w3id.org/cityont#ТИ4_1
+:ТИ4_1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Объектов_внешнего_транспорта ;
+       rdfs:comment """Подзона объектов водного транспорта, расположенных в исторически сложившихся районах морского порта с включением объектов общественно-деловой застройки, связанных с обслуживанием основной функции данной зоны, и объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+-         развитие объектов грузового и пассажирского водного транспорта в соответствии с их технологическими потребностями и условиями размещения на территории города;
+-         развитие комплексов грузовых терминалов, оснащенных всеми необходимыми для качественного выполнения основных функций технологическими и социальными объектами.""" .
+
+
+###  https://w3id.org/cityont#ТИ4_2
+:ТИ4_2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Объектов_внешнего_транспорта ;
+       rdfs:comment """Подзона объектов водного транспорта, расположенных во вновь построенных и перспективных районах морского порта с включением объектов общественно-деловой застройки, связанных с обслуживанием основной функции данной зоны, и объектов инженерной инфраструктуры.
+
+Цели выделения зоны:
+-         развитие объектов грузового и пассажирского водного транспорта в соответствии с их технологическими потребностями и условиями размещения на территории города;
+-         развитие комплексов грузовых терминалов, оснащенных всеми необходимыми для качественного выполнения основных функций технологическими и социальными объектами.""" .
+
+
+###  https://w3id.org/cityont#ТК1
+:ТК1 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Специального_назначения ;
+     rdfs:comment """Зона специального назначения – кладбищ и крематориев с включением объектов инженерной инфраструктуры.
+
+Цель выделения – обеспечение правовых условий размещения кладбищ и крематориев.""" .
+
+
+###  https://w3id.org/cityont#ТК2
+:ТК2 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Специального_назначения ;
+     rdfs:comment """Зона специального назначения – объектов размещения отходов производства и потребления с включением объектов инженерной инфраструктуры.
+
+Цель выделения – обеспечение правовых условий размещения отходов производства и потребления и объектов санитарной очистки.""" .
+
+
+###  https://w3id.org/cityont#ТК3
+:ТК3 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Специального_назначения ;
+     rdfs:comment """Зона специального назначения – военных и иных режимных объектов с включением объектов общественно-деловой и жилой застройки, связанных с обслуживанием объектов данной зоны, а также объектов инженерной инфраструктуры.
+
+Цель выделения – обеспечение правовых условий размещения военных и иных режимных объектов.""" .
+
+
+###  https://w3id.org/cityont#ТП1
+:ТП1 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Производственная ;
+     rdfs:comment """Зона объектов пищевой промышленности, а также объектов легкой и целлюлозно-бумажной промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цель выделения зоны – формирование и развитие зоны объектов пищевой, легкой и целлюлозно-бумажной промышленности.""" .
+
+
+###  https://w3id.org/cityont#ТП2
+:ТП2 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Производственная ;
+     rdfs:comment """Зона объектов автомобилестроительной промышленности, а также объектов тяжелой промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цель выделения зоны – формирование и развитие зоны объектов автомобилестроительной и тяжелой промышленности.""" .
+
+
+###  https://w3id.org/cityont#ТП3
+:ТП3 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Производственная ;
+     rdfs:comment """Зона объектов фармацевтической промышленности, а также объектов нефтехимической и строительной промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+       
+Цель выделения зоны – формирование и развитие зоны объектов фармацевтической, нефтехимической и строительной промышленности.""" .
+
+
+###  https://w3id.org/cityont#ТП4
+:ТП4 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Производственная ;
+     rdfs:comment """Зона объектов тяжелой промышленности, а также объектов строительной промышленности с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+     
+Цель выделения зоны – формирование и развитие зоны объектов тяжелой и строительной промышленности.""" .
+
+
+###  https://w3id.org/cityont#ТПД1_1
+:ТПД1_1 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Многофункциональная_ПСИОД ;
+        rdfs:comment """Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)
+          
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов.""" .
+
+
+###  https://w3id.org/cityont#ТПД1_2
+:ТПД1_2 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Многофункциональная_ПСИОД ;
+        rdfs:comment """Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)
+          
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов.""" .
+
+
+###  https://w3id.org/cityont#ТПД1_3
+:ТПД1_3 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Многофункциональная_ПСИОД ;
+        rdfs:comment """Зона объектов производственного, складского назначения, инженерной инфраструктуры IV и V классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)
+          
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз не выше IV класса опасности, с низкими уровнями шума и загрязнения, допускающими размещение ограниченного набора общественно-деловых объектов.""" .
+
+
+###  https://w3id.org/cityont#ТПД2_1
+:ТПД2_1 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasPermit :Разрешение_ТПД2_1_ВИТ_АвтоСтройПром ,
+                   :Разрешение_ТПД2_1_ВИТ_АвтоТранс ,
+                   :Разрешение_ТПД2_1_ВИТ_ВетОб ,
+                   :Разрешение_ТПД2_1_ВИТ_ВодТранс ,
+                   :Разрешение_ТПД2_1_ВИТ_ГидроТехСооруж ,
+                   :Разрешение_ТПД2_1_ВИТ_ДелУп ,
+                   :Разрешение_ТПД2_1_ВИТ_ЖелСерв ,
+                   :Разрешение_ТПД2_1_ВИТ_ЗУТОП ,
+                   :Разрешение_ТПД2_1_ВИТ_КО ,
+                   :Разрешение_ТПД2_1_ВИТ_ЛегПром ,
+                   :Разрешение_ТПД2_1_ВИТ_Магазины ,
+                   :Разрешение_ТПД2_1_ВИТ_НефтХимПром ,
+                   :Разрешение_ТПД2_1_ВИТ_ОВПП ,
+                   :Разрешение_ТПД2_1_ВИТ_ОПридСер ,
+                   :Разрешение_ТПД2_1_ВИТ_ПД ,
+                   :Разрешение_ТПД2_1_ВИТ_ПищПром ,
+                   :Разрешение_ТПД2_1_ВИТ_ПричДМС ,
+                   :Разрешение_ТПД2_1_ВИТ_РитУсл ,
+                   :Разрешение_ТПД2_1_ВИТ_Рынки ,
+                   :Разрешение_ТПД2_1_ВИТ_Склады ,
+                   :Разрешение_ТПД2_1_ВИТ_СлГараж ,
+                   :Разрешение_ТПД2_1_ВИТ_СтройПром ,
+                   :Разрешение_ТПД2_1_ВИТ_ТрубопрТранс ,
+                   :Разрешение_ТПД2_1_ВИТ_ТяжПром ,
+                   :Разрешение_ТПД2_1_ВИТ_ФармПром ,
+                   :Разрешение_ТПД2_1_ВИТ_ЦелюлБумПром ,
+                   :Разрешение_ТПД2_1_ВИТ_Энерг ,
+                   :Разрешение_ТПД2_1_ПРС_МВЗКЛ ,
+                   :Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_Складов ,
+                   :Разрешение_ТПД2_1_ПРС_МКМДХГТ_для_остальных_ВИТ ,
+                   :Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_не_примыкакают_к_проезчасти ,
+                   :Разрешение_ТПД2_1_ПРС_МКМДХГТ_площадь_примыкакают_к_проезчасти ,
+                   :Разрешение_ТПД2_1_ПРС_МКО ,
+                   :Разрешение_ТПД2_1_ПРС_МКЭ ,
+                   :Разрешение_ТПД2_1_ПРС_МООГУССКЛ ,
+                   :Разрешение_ТПД2_1_ПРС_ПРЗУ ;
+        :hasZoneType :Многофункциональная_ПСИОД ,
+                     :Производственная ;
+        rdfs:comment """ Градостроительный регламент многофункциональной зоны объектов производственного, складского назначения, инженерной инфраструктуры II и III классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры.
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения, интенсивным движением большегрузного и железнодорожного транспорта. Сочетание объектов различных видов разрешенного использования в единой зоне возможно при соблюдении санитарных правил.""" .
+
+
+###  https://w3id.org/cityont#ТПД2_2
+:ТПД2_2 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Производственная ;
+        rdfs:comment """Зона объектов производственного, складского назначения, инженерной инфраструктуры II и III классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)
+          
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения, интенсивным движением большегрузного и железнодорожного транспорта. Сочетание объектов различных видов разрешенного использования в единой зоне возможно при соблюдении санитарных правил.""" .
+
+
+###  https://w3id.org/cityont#ТПД2_3
+:ТПД2_3 rdf:type owl:NamedIndividual ,
+                 :E01_Zone ;
+        :hasZoneType :Многофункциональная_ПСИОД ;
+        rdfs:comment """Зона объектов производственного, складского назначения, инженерной инфраструктуры II и III классов опасности, а также объектов общественно-деловой застройки (виды разрешенного использования и предельные параметры)
+          
+Цель выделения зоны – формирование комплексов производственных, коммунальных предприятий, складских баз II-III классов опасности, деятельность которых связана с высокими уровнями шума, загрязнения, интенсивным движением большегрузного и железнодорожного транспорта. Сочетание объектов различных видов разрешенного использования в единой зоне возможно при соблюдении санитарных правил.""" .
+
+
+###  https://w3id.org/cityont#ТР0-1
+:ТР0-1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Зона рекреационного назначения – пляжей и объектов водного спорта.
+Цель выделения зоны – сохранение прибрежных территорий, представляющих ценность для отдыха на открытом воздухе.""" .
+
+
+###  https://w3id.org/cityont#ТР0-2
+:ТР0-2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Зона рекреационного назначения – спортивных сооружений с включением объектов инженерной инфраструктуры.
+Цель выделения зоны – сохранение и развитие территорий, предназначенных для занятий физической культурой, спортом.""" .
+
+
+###  https://w3id.org/cityont#ТР1
+:ТР1 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Рекреационного_назначения ;
+     rdfs:comment """Зона рекреационного назначения – лесов и лесопарков с включением объектов инженерной инфраструктуры.
+Цели выделения зоны:
+-         сохранение существующего природного ландшафта, зеленого фонда Санкт-Петербурга, создание комфортных условий посещения городских лесов;
+-         обустройство территории для отдыха населения.""" .
+
+
+###  https://w3id.org/cityont#ТР2
+:ТР2 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Рекреационного_назначения ;
+     rdfs:comment """Зона рекреационного назначения – зеленых насаждений общего и зеленых насаждений ограниченного пользования с включением объектов инженерной инфраструктуры.
+Цель выделения зоны – сохранение и обустройство открытых озелененных пространств при их активном использовании.""" .
+
+
+###  https://w3id.org/cityont#ТР3-1
+:ТР3-1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Зона рекреационного назначения – объектов отдыха, спорта, досуга и развлечений с включением объектов инженерной инфраструктуры.
+Цель выделения зоны:
+-         сохранение и развитие ценных в природном отношении территорий, пригодных для отдыха, спорта и развлечений;
+-         размещение необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТР3-2
+:ТР3-2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasPermit :Разрешение_ТР3-2_ВИТ_ОГН ,
+                  :Разрешение_ТР3-2_ПРС_Набор1 ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Градостроительный регламент зоны рекреационного назначения - объектов туризма и санаторно-курортного лечения, гостиниц и пансионатов, дачного фонда с включением объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры)
+Цель выделения зоны - сохранение и развитие ценных в природном отношении территорий, пригодных для туризма, отдыха, санаторно-курортного лечения, размещение необходимых объектов инженерной и транспортной инфраструктур.""" .
+
+
+###  https://w3id.org/cityont#ТР4
+:ТР4 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Рекреационного_назначения ;
+     rdfs:comment """Зона зеленых насаждений, выполняющих специальные функции с включением объектов, допустимых в соответствии с законодательством.
+
+Цель выделения зоны – сохранение и обустройство рекреационных территорий дворцово-парковых комплексов и иных исторически ценных градоформирующих объектов и пространств.""" .
+
+
+###  https://w3id.org/cityont#ТР5-1
+:ТР5-1 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Зона рекреационного назначения – зеленых насаждений, выполняющих специальные функции на территории водоохранных зон, с размещением объектов основных видов разрешенного использования прилегающих территориальных зон, допустимых в соответствии с Водным кодексом Российской Федерации с включением объектов инженерной инфраструктуры.
+
+Цель выделения зоны – сохранение и развитие зеленых насаждений на территории водоохранных зон.""" .
+
+
+###  https://w3id.org/cityont#ТР5-2
+:ТР5-2 rdf:type owl:NamedIndividual ,
+                :E01_Zone ;
+       :hasZoneType :Рекреационного_назначения ;
+       rdfs:comment """Зона рекреационного назначения зеленых насаждений, выполняющих специальные функции на территории санитарно-защитных зон, с размещением объектов основных видов разрешенного использования прилегающих территориальных зон, допустимых в соответствии с санитарно-гигиеническими правилами и нормами с включением объектов инженерной инфраструктуры.
+
+Цель выделения зоны – сохранение и развитие зеленых насаждений на территории санитарно-защитных зон.""" .
+
+
+###  https://w3id.org/cityont#ТС1
+:ТС1 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Сельскохозяйственного_использования ;
+     rdfs:comment """Зона сельскохозяйственных угодий с включением  объектов  инженерной  инфраструктуры
+
+Цель  выделения  зоны  -  сохранение  и  развитие сельскохозяйственных  угодий,  питомников  и  теплиц  и  обеспечивающих  их инфраструктур,  предотвращение  их  использования  для  других  видов деятельности  до  изменения  вида  их  использования  в  соответствии  с Генеральным планом Санкт-Петербурга.""" .
+
+
+###  https://w3id.org/cityont#ТС2
+:ТС2 rdf:type owl:NamedIndividual ,
+              :E01_Zone ;
+     :hasZoneType :Сельскохозяйственного_использования ;
+     rdfs:comment """Зона производственных  объектов сельскохозяйственного  назначения  с  включением  объектов  инженерной инфраструктуры
+
+Цель выделения зоны - сохранение и развитие производственных объектов  сельскохозяйственного  назначения  и  обеспечивающих  их инфраструктур до изменения профиля территориальной зоны в соответствии с Генеральным планом Санкт-Петербурга""" .
+
+
+###  https://w3id.org/cityont#ТУ
+:ТУ rdf:type owl:NamedIndividual ,
+             :E01_Zone ;
+    :hasZoneType :Улично-дорожной_сети_города ;
+    rdfs:comment """Зона городских скоростных дорог, магистралей непрерывного движения, магистралей городского значения и основных магистралей районного значения, с включением объектов инженерной и транспортной инфраструктур, а также с размещением объектов основных видов разрешенного использования смежных территориальных зон, с учетом требований стандартов и технических норм безопасности дорожного движения, экологической безопасности, строительства и эксплуатации автомобильных дорог.
+
+Цель выделения зоны – развитие системы скоростных автомобильных дорог, магистралей непрерывного движения и магистралей городского значения.""" .
+
+
+###  https://w3id.org/cityont#Улично-дорожной_сети_города
+:Улично-дорожной_сети_города rdf:type owl:NamedIndividual ,
+                                      :E03_ZoneType .
+
+
+###  https://w3id.org/cityont#Условие_о_строительстве_рядом_с_красными_линиями
+:Условие_о_строительстве_рядом_с_красными_линиями rdf:type owl:NamedIndividual ,
+                                                           :E16_Red_line_condition ;
+                                                  rdfs:comment "могут размещаться только на земельных участках, примыкающих к красным линиям и (или) улицам, дорогам, площадям, проездам, набережным, бульварам, за исключением внутриквартальных проездов, при отсутствии норм законодательства, запрещающих их размещение" ;
+                                                  rdfs:label "могут размещаться только на земельных участках, примыкающих к красным линиям" .
+
+
+###  https://w3id.org/cityont#Условно-разрешенный
+:Условно-разрешенный rdf:type owl:NamedIndividual ,
+                              :E07_PermissionTypeLandUse ;
+                     rdfs:comment """не относятся к разрешенным, но введение их допустимо градостроительным регламентом той территориальной зоны, к которой относится участок. Для установления условно разрешённого ВРИ участка требуется проведение дополнительных согласований через рассмотрение в Комиссии по землепользованию и застройке муниципального образования и на публичных слушаниях.
+""" ;
+                     rdfs:label "Условно-разрешенный" .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_1
+<https://w3id.org/cityont#18_Квартал_Территория_1> rdf:type owl:NamedIndividual ,
+                                                            :E04_Territory ;
+                                                   :belongsToZone :Т3Ж2 ;
+                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://w3id.org/cityont#18_Квартал_Территория_1_Polygon> ;
+                                                   rdfs:comment "Т3Ж2" .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_1_Polygon
+<https://w3id.org/cityont#18_Квартал_Территория_1_Polygon> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.opengis.net/ont/sf#Polygon> ;
+                                                           <http://www.opengis.net/ont/geosparql#asWKT> "POLYGON((29.732929567793857 60.005517039580063, 29.731673030218325 60.0058836456355, 29.731673030225593 60.005883644737935, 29.730978425603109 60.006086293151384, 29.731165250915748 60.006233437742921, 29.730888081350081 60.006315948142081, 29.731239592327004 60.006612961273042, 29.730746209751672 60.006761490208703, 29.729952432221367 60.006438555591217, 29.729501956433595 60.006209902730646, 29.72799616060318 60.006005316136083, 29.723940608271594 60.006992161032763, 29.722650473593863 60.00731057325649, 29.720479753998024 60.007844449862596, 29.720198892897614 60.007910814190332, 29.720007120784228 60.007953404290326, 29.71988195229731 60.007977770134232, 29.719671915255525 60.008012917869756, 29.719592943149088 60.008024687996631, 29.719513441587594 60.008035469625284, 29.719433589070139 60.008045352890889, 29.719366774440996 60.008053254138147, 29.719235118705864 60.008066517010711, 29.719102628913458 60.008077502638841, 29.718969459377121 60.008086196089408, 29.718835773327861 60.008092587834462, 29.718701726811869 60.008096670126356, 29.718567477637691 60.008098438812304, 29.718433187191529 60.008097890645168, 29.718299015021358 60.008095027760106, 29.718021106388939 60.008081211118125, 29.717796977371268 60.008067089589048, 29.717510063656459 60.008032635451073, 29.717256555964322 60.008012959758517, 29.717000749293273 60.008003290154385, 29.716813014912134 60.008007270797698, 29.716616170947777 60.008007661104081, 29.716488533822282 60.00801414692036, 29.716361513016647 60.008023176752957, 29.716235274659727 60.008034605554094, 29.71599615783926 60.008063920805156, 29.715742226682067 60.008104957440054, 29.715622879975299 60.008128524861277, 29.71550547061182 60.008154417462734, 29.715382408279286 60.008184996564928, 29.715128549949736 60.008257393285753, 29.717023128926868 60.009760784938123, 29.717964448034408 60.010546445892487, 29.718432205787757 60.010942015074143, 29.719957724530055 60.012181658884998, 29.720027261718844 60.01222677445768, 29.720114438624364 60.012263579956219, 29.72021496778752 60.012290271129672, 29.720324734143727 60.012305851912693, 29.720514058353725 60.012305175359081, 29.721321446090901 60.012229958695592, 29.721381916973112 60.01222353394229, 29.721441861327904 60.012215761697227, 29.721500920598029 60.012206641205438, 29.721559274052101 60.012196172845897, 29.721616383858503 60.012184355486553, 29.721654642600161 60.012175729649442, 29.721727229547849 60.012156854040555, 29.721780785391967 60.012141259334641, 29.721844774543005 60.012121467990667, 29.722061847055464 60.012037369168439, 29.724786734856671 60.011213901733043, 29.727403233576805 60.010406575680086, 29.727950390697409 60.010241005708352, 29.728139643523146 60.010387807621903, 29.731430675932131 60.009345727092139, 29.731261722379564 60.009216248481088, 29.732659807340848 60.008785022346821, 29.733052908052066 60.008659071235847, 29.736631866087343 60.007575402287245, 29.737002299764942 60.007436768150832, 29.737592481868532 60.007261046639314, 29.737882175817987 60.007178534476303, 29.738187969487473 60.007090693292618, 29.738456101277368 60.007026899047545, 29.738799358216539 60.00693913059559, 29.738890539415891 60.006915189514622, 29.740847673292546 60.006474124244029, 29.740581974960232 60.006176078302978, 29.738806822738606 60.006579114909911, 29.738613302536454 60.006350177796435, 29.736233080308029 60.006904357503906, 29.735753968648915 60.006409794351754, 29.733409309324021 60.007060418488592, 29.733184184748623 60.006860586033049, 29.734193160088292 60.006549706909141, 29.732929567793857 60.005517039580063))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_2
+<https://w3id.org/cityont#18_Квартал_Территория_2> rdf:type owl:NamedIndividual ,
+                                                            :E04_Territory ;
+                                                   :belongsToZone :ТР3-2 ;
+                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://w3id.org/cityont#18_Квартал_Территория_2_Polygon> ;
+                                                   rdfs:comment "ТР3-2" .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_2_Polygon
+<https://w3id.org/cityont#18_Квартал_Территория_2_Polygon> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.opengis.net/ont/sf#Polygon> ;
+                                                           <http://www.opengis.net/ont/geosparql#asWKT> "POLYGON((29.738303082231596 60.003365154582333, 29.735991972488918 60.003866190611014, 29.735864669824291 60.003897965982034, 29.732209640755883 60.004726330284768, 29.731014385506512 60.005074420716518, 29.731004471240894 60.005099433765274, 29.731080084464946 60.005235144101256, 29.72937858975758 60.00566046648386, 29.728954979556462 60.005770047827959, 29.72799616060318 60.006005316136083, 29.729501956433595 60.006209902730646, 29.729952432221367 60.006438555591217, 29.730746209751672 60.006761490208703, 29.731239592327004 60.006612961273042, 29.730888081350081 60.006315948142081, 29.731165250915748 60.006233437742921, 29.730978425603109 60.006086293151384, 29.731673030225593 60.005883644737935, 29.731673030218325 60.0058836456355, 29.732929567793857 60.005517039580063, 29.734193160088292 60.006549706909141, 29.733184184748623 60.006860586033049, 29.733409309324021 60.007060418488592, 29.735753968648915 60.006409794351754, 29.735384161234816 60.006054682968916, 29.735377283090472 60.005921433026273, 29.735499381021249 60.00570807649774, 29.735582872437675 60.005637549196436, 29.736203256931621 60.005502405229748, 29.736943244501955 60.005320012372842, 29.737277663830334 60.005227036038612, 29.737431822783883 60.005193833481243, 29.739442328202877 60.00484376055465, 29.738303082231596 60.003365154582333))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_3
+<https://w3id.org/cityont#18_Квартал_Территория_3> rdf:type owl:NamedIndividual ,
+                                                            :E04_Territory ;
+                                                   :belongsToZone :ТР3-2 ;
+                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://w3id.org/cityont#18_Квартал_Территория_3_Polygon> ;
+                                                   rdfs:comment "ТР3-2" .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_3_Polygon
+<https://w3id.org/cityont#18_Квартал_Территория_3_Polygon> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.opengis.net/ont/sf#Polygon> ;
+                                                           <http://www.opengis.net/ont/geosparql#asWKT> "POLYGON((29.724224407558019 60.003581556271207, 29.724847055753045 60.004010105126468, 29.724980710873886 60.004138770075173, 29.727674511629441 60.00572372853113, 29.729599133103783 60.005249160368606, 29.729923349811479 60.005166147466028, 29.732421459542259 60.004551752066327, 29.732898425094916 60.0044385461633, 29.73814122834299 60.003240169504743, 29.736356377033442 60.000885727236522, 29.736106549321473 60.000750592907387, 29.736088813817709 60.00072722064828, 29.735716238769317 60.000313816043551, 29.735302727221615 60.0004186789917, 29.735064761600789 60.000594125876418, 29.734559180993511 60.000618243091957, 29.734030883978587 60.000793104513043, 29.733857296424233 60.000984835074739, 29.73353421936304 60.001045218696348, 29.733429032913048 60.001199388660353, 29.732692814801965 60.00137562021942, 29.732956261881583 60.00159875044632, 29.732882737115379 60.001826584740172, 29.732538375542841 60.001858200642815, 29.732181344103971 60.001683348739498, 29.732201499890326 60.001406937852266, 29.732034023045852 60.001284528690881, 29.731502946757359 60.001357051327666, 29.731516266067278 60.001482738282022, 29.731336277478427 60.001577514902223, 29.730568918871562 60.001613650298019, 29.730155635874226 60.001745647339732, 29.729987886991118 60.001657342711965, 29.729941217114316 60.001666223035819, 29.729805391777838 60.001619271671125, 29.729123409677683 60.001734559458981, 29.728734739917705 60.001924047043708, 29.728705359381106 60.002010153503392, 29.728357260392418 60.002059702252879, 29.728040550896434 60.002215228037123, 29.728021597469347 60.002340848913576, 29.728422083532902 60.00246015200959, 29.728178282002784 60.002466831235438, 29.728020831349287 60.00243419468184, 29.727912811535621 60.002493211944561, 29.727669437475949 60.002447832015548, 29.727600668930073 60.002528471614333, 29.727439634100588 60.002495826978617, 29.727098031798413 60.002626167174547, 29.726161916638322 60.003126869926312, 29.725564908753693 60.003364385058816, 29.72504250213515 60.003466340087371, 29.724459483978904 60.003571667194748, 29.724224407558019 60.003581556271207))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_4
+<https://w3id.org/cityont#18_Квартал_Территория_4> rdf:type owl:NamedIndividual ,
+                                                            :E04_Territory ;
+                                                   :belongsToZone <https://w3id.org/cityont#Т2ЖД2/ТК3> ;
+                                                   <http://www.opengis.net/ont/geosparql#hasGeometry> <https://w3id.org/cityont#18_Квартал_Территория_4_Polygon> ;
+                                                   rdfs:comment "Т2ЖД2/ТК3" .
+
+
+###  https://w3id.org/cityont#18_Квартал_Территория_4_Polygon
+<https://w3id.org/cityont#18_Квартал_Территория_4_Polygon> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.opengis.net/ont/sf#Polygon> ;
+                                                           <http://www.opengis.net/ont/geosparql#asWKT> "POLYGON((29.740581974960232 60.006176078302978, 29.739775938417278 60.005268597815224, 29.739442328202877 60.00484376055465, 29.737431822783883 60.005193833481243, 29.737277663830334 60.005227036038612, 29.736943244501955 60.005320012372842, 29.736203256931621 60.005502405229748, 29.735582872437675 60.005637549196436, 29.735499381021249 60.00570807649774, 29.735377283090472 60.005921433026273, 29.735384161234816 60.006054682968916, 29.735753968648915 60.006409794351754, 29.736233080308029 60.006904357503906, 29.738613302536454 60.006350177796435, 29.738806822738606 60.006579114909911, 29.740581974960232 60.006176078302978))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> .
+
+
+###  https://w3id.org/cityont#Земельные_участки_(территории)_общего_пользования
+<https://w3id.org/cityont#Земельные_участки_(территории)_общего_пользования> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont#Т2ЖД2/ТК3
+<https://w3id.org/cityont#Т2ЖД2/ТК3> rdf:type owl:NamedIndividual ,
+                                              :E01_Zone ;
+                                     :hasZoneType :Специального_назначения ;
+                                     rdfs:comment """Градостроительный регламент зоны специального назначения – военных и иных режимных объектов с включением объектов общественно-деловой и жилой застройки, связанных с обслуживанием объектов данной зоны, а также объектов инженерной инфраструктуры (виды разрешенного использования и предельные параметры).
+
+Цель выделения - обеспечение правовых условий размещения военных и иных режимных объектов.
+""" .
+
+
+###  https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м
+<https://w3id.org/cityont#относится_к_основным_видам_если_не_более_1500_м*м> rdf:type owl:NamedIndividual ,
+                                                                                      :E17_Max_square_condition ;
+                                                                             rdfs:comment "относятся к основным видам разрешенного использования при условии, что общая площадь объектов капитального строительства на соответствующих земельных участках не превышает 1500 квадратных метров. В случае если общая площадь объектов капитального строительства на соответствующих земельных участках превышает 1500 квадратных метров, то объекты указанных видов использования относятся к условно разрешенным видам использования." ;
+                                                                             rdfs:label "относится к основным видам при площади не более 1500 м*м" .
+
+
+###  https://w3id.org/cityont/kvrizy#автодорожный_транспорт
+<https://w3id.org/cityont/kvrizy#автодорожный_транспорт> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#автомобилестроительная_промышленность
+<https://w3id.org/cityont/kvrizy#автомобилестроительная_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#амбулаторно-поликлиническое_обслуживание
+<https://w3id.org/cityont/kvrizy#амбулаторно-поликлиническое_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#амбулаторное_ветеринарное_обслуживание
+<https://w3id.org/cityont/kvrizy#амбулаторное_ветеринарное_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#банковская_и_страховая_деятельность
+<https://w3id.org/cityont/kvrizy#банковская_и_страховая_деятельность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#ветериарное_обслуживание
+<https://w3id.org/cityont/kvrizy#ветериарное_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#водный_транспорт
+<https://w3id.org/cityont/kvrizy#водный_транспорт> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#гидротехнические_сооружения
+<https://w3id.org/cityont/kvrizy#гидротехнические_сооружения> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#гостиничное_обслуживание
+<https://w3id.org/cityont/kvrizy#гостиничное_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#дошкольное_начальное_и_среднее_общее_образование
+<https://w3id.org/cityont/kvrizy#дошкольное_начальное_и_среднее_общее_образование> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#железнодорожный_сервис
+<https://w3id.org/cityont/kvrizy#железнодорожный_сервис> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#земельные_участки_территории_общего_пользования
+<https://w3id.org/cityont/kvrizy#земельные_участки_территории_общего_пользования> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#коммунальное_обслуживание
+<https://w3id.org/cityont/kvrizy#коммунальное_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#легкая_промышленность
+<https://w3id.org/cityont/kvrizy#легкая_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#магазины
+<https://w3id.org/cityont/kvrizy#магазины> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#многоэтажная_жилая_застройка_высотная_застройка
+<https://w3id.org/cityont/kvrizy#многоэтажная_жилая_застройка_высотная_застройка> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#нефтехимическая_промышленность
+<https://w3id.org/cityont/kvrizy#нефтехимическая_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#обеспечение_внутреннего_правопорядка
+<https://w3id.org/cityont/kvrizy#обеспечение_внутреннего_правопорядка> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#обеспечение_внутренного_правопорядка
+<https://w3id.org/cityont/kvrizy#обеспечение_внутренного_правопорядка> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#общественное_питание
+<https://w3id.org/cityont/kvrizy#общественное_питание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#общественное_управление
+<https://w3id.org/cityont/kvrizy#общественное_управление> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#объекты_дорожного_сервиса
+<https://w3id.org/cityont/kvrizy#объекты_дорожного_сервиса> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#объекты_придорожного_сервиса
+<https://w3id.org/cityont/kvrizy#объекты_придорожного_сервиса> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#ообеспечение_деятельности_в_области_гидрометеорологии_и_смежных_с_ней_областях
+<https://w3id.org/cityont/kvrizy#ообеспечение_деятельности_в_области_гидрометеорологии_и_смежных_с_ней_областях> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#пищевая_промышленность
+<https://w3id.org/cityont/kvrizy#пищевая_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#причалы_для_маломерных_судов
+<https://w3id.org/cityont/kvrizy#причалы_для_маломерных_судов> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#производственная_деятельность
+<https://w3id.org/cityont/kvrizy#производственная_деятельность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#религиозное_использование
+<https://w3id.org/cityont/kvrizy#религиозное_использование> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#ритуальные_услуги
+<https://w3id.org/cityont/kvrizy#ритуальные_услуги> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#рынки
+<https://w3id.org/cityont/kvrizy#рынки> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#связь
+<https://w3id.org/cityont/kvrizy#связь> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#склады
+<https://w3id.org/cityont/kvrizy#склады> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#служебные_гаражи
+<https://w3id.org/cityont/kvrizy#служебные_гаражи> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#социальное_обслуживание
+<https://w3id.org/cityont/kvrizy#социальное_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#спорт
+<https://w3id.org/cityont/kvrizy#спорт> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#среднеэтажная_жилая_застройка
+<https://w3id.org/cityont/kvrizy#среднеэтажная_жилая_застройка> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#стационарное_медицинское_обслуживание
+<https://w3id.org/cityont/kvrizy#стационарное_медицинское_обслуживание> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#строительная_промышленность
+<https://w3id.org/cityont/kvrizy#строительная_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#трубопроводный_транспорт
+<https://w3id.org/cityont/kvrizy#трубопроводный_транспорт> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#тяжелая_промышленность
+<https://w3id.org/cityont/kvrizy#тяжелая_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#фармацевтическая_промышленность
+<https://w3id.org/cityont/kvrizy#фармацевтическая_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#хранение_автотранспорта
+<https://w3id.org/cityont/kvrizy#хранение_автотранспорта> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#целлюлозно-бумажная_промышленность
+<https://w3id.org/cityont/kvrizy#целлюлозно-бумажная_промышленность> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/cityont/kvrizy#энергетика
+<https://w3id.org/cityont/kvrizy#энергетика> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
