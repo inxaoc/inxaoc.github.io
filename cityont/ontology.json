@@ -116,6 +116,9 @@
 }, {
   "@id" : "https://w3id.org/cityont#E02_Permit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "<h3>Заголово</h3>\nКако то текст\n<ul>\n<li>пункт 1</li>\n<li>пункт 1</li>\n<li>пункт 1</li>\n</ul>"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Permit"

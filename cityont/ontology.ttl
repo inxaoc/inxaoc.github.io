@@ -128,6 +128,13 @@
 
 ###  https://w3id.org/cityont#E02_Permit
 :E02_Permit rdf:type owl:Class ;
+            rdfs:comment """<h3>Заголово</h3>
+Како то текст
+<ul>
+<li>пункт 1</li>
+<li>пункт 1</li>
+<li>пункт 1</li>
+</ul>""" ;
             rdfs:label "Permit"@en ,
                        "Разрешение"@ru .
 
