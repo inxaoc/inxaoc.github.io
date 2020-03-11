@@ -1,0 +1,999 @@
+[ {
+  "@id" : "http://ontology.eil.utoronto.ca/icity/LBCSv2/Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Элемент благоустройства"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Apartment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Квартира"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Сооружение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CapitalConstruction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Объект капитального строительства"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CarVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Легковой автомобиль"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CentralBank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Центральный банк"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CharityFoundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Crosswalk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Пешеходный переход"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Economic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Экономический"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalAgency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Федеральное агенство"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Федеральный орга власти"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGovernment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Правительство РФ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalMinistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Федеральное министерство"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Garage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Гараж"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GovCorporation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Госкорпорация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#House",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Частный дом"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#IP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#KU_state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Казенное учреждение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Land",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Земельный участок"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Жилой объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MultyAptHouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Многоквартирный дом"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunAdministration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Муниципальная администрация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunDepSovet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Совет муниципальных депутатов"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Муниципальный орга власти"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitAssociation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Некоммерческая ассоциация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitFoundation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Некоммерческий фонд"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitPartnership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Некоммерческое партнерство"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#OOO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Route",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Маршрут ОТ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Stop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Остановка ОТ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Trip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Наряд ОТ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PassengerVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Перевозчик пассажиров"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Pedestrian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Пешеходная зона"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Президент"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentAdministration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentHumanRightsSovet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ProsecutorOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Прокуратура"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicHeatingSystemObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Отопительная система"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicNotRegistered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Общественная организация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Объект общественного транспорта"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Пассажирское транспортное средство"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalAdministartion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Администрация субъекта федерации"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Региональный орган власти"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalMinistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Региональный исполнительный орган власти"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalParliament",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Парламент субъекта федерации"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Road",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Дорога"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadLane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Полоса движения"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadNetworkObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Улично дорожная сеть"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#SmallArchitecrure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "МАФ"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#StateOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Бюджетное учреждение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TallMultyApt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Высотное жилое строение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TemporalBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Временное сооружение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Territory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Иная территория"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Townhouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TrafficLight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Светофор"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Tree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Зеленое насаждение"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TruckVehicle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Грузовой автомобиль"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ZAO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Территориальная зона"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Agent class is the class of agents; things that do stuff."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/spec/#term_Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Агент"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Объект, обозначаемый площадью на карте (например, здание или парк)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Площадной объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "АНО"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#CommercialObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Коммерческий объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#CulturalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Культурный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Disabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledMovement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledSight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EarlyChildhood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Образовательный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EnergeticObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Энергетический объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Коммерческая организация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Описание функций физического объекта"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Функциональный объект"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Геометрия"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Государственная организация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Орган власти"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GreenObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Зелёный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Group class represents a collection of individual agents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/spec/#term_Group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Группа"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Infant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MedicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Медицинский объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Military",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Объект, который не имеет фиксированного места (например, транспорт или движимая уличная фурнитура)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Движимый объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Объект живой природы (например, зелёное насаждение)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Природный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Объект, обозначаемый на карте линией или сетью линий (например, дорога или система водоснабжения)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Сетевой объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Некоммерческая организация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/spec/#term_Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Организация"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentWithInfant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithEarlyChildhood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPreschooler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPrimarySchoolAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person class represents people."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://xmlns.com/foaf/spec/#term_Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Человек"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Класс городских сущностей. Сюда помещаются конкретные физические объекты (например, здание), которые связываются с функциями (например, университет), координатами и управляющими ими организациями (например, Университет ИТМО)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Физический объект"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Объект, обозначаемый на карте точкой (например, памятник или остановочный павильон)"
+  }, {
+    "@value" : "Точечный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Pregnant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Preschooler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PrimarySchoolAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Общественный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicPowerSystemObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Электросетевая система"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSewerageSystemObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Канализационная система"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Коммунальная система"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicWaterSystemObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Система водоснабжения"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#RecreationalObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Рекреационный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Reference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Справочник"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ReligiousObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Религиозный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Senior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Описание групп населения в базе данных"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Социальная группа населения"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Объект, несущий функцию обеспечения населения города любыми сервисами (например, школа или музей)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Социальный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SportsObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Спортивный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#TechnoparkITMO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building" ],
+  "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasFunction" : [ {
+    "@id" : "http://ontology.eil.utoronto.ca/icity/LBCSv2/Museum"
+  } ],
+  "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasManagingOrganization" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Teenager",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Tween",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#University",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#WaterObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Водный объект"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#WorkingPopulation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasManagingOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasNestedObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasSocialGroupPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+} ]

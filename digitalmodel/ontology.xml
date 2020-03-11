@@ -1,0 +1,1285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:city-data-conceptual="http://www.semanticweb.org/user/ontologies/city-data-conceptual#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasFunction -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasFunction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasManagingOrganization -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasManagingOrganization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasNestedObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasNestedObject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasSocialGroupPercentage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasSocialGroupPercentage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AO -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject"/>
+        <rdfs:label>Элемент благоустройства</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Apartment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Apartment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"/>
+        <rdfs:label>Квартира</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject"/>
+        <rdfs:label>Сооружение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CapitalConstruction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CapitalConstruction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"/>
+        <rdfs:label>Объект капитального строительства</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CarVehicle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CarVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"/>
+        <rdfs:label>Легковой автомобиль</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CentralBank -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CentralBank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Центральный банк</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CharityFoundation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CharityFoundation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Crosswalk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Crosswalk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Пешеходный переход</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Economic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Economic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:comment>Экономический</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalAgency -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalAgency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"/>
+        <rdfs:label>Федеральное агенство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"/>
+        <rdfs:label>Федеральный орга власти</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGovernment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGovernment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"/>
+        <rdfs:label>Правительство РФ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalMinistry -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalMinistry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"/>
+        <rdfs:label>Федеральное министерство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Garage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Garage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"/>
+        <rdfs:label>Гараж</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GovCorporation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GovCorporation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Госкорпорация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#House -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#House">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"/>
+        <rdfs:label>Частный дом</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#IP -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#IP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#KU_state -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#KU_state">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Казенное учреждение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Land -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit"/>
+        <rdfs:label>Земельный участок</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:label>Жилой объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MultyAptHouse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MultyAptHouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"/>
+        <rdfs:label>Многоквартирный дом</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunAdministration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunAdministration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov"/>
+        <rdfs:label>Муниципальная администрация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunDepSovet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunDepSovet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov"/>
+        <rdfs:label>Совет муниципальных депутатов</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"/>
+        <rdfs:label>Муниципальный орга власти</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitAssociation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitAssociation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+        <rdfs:label>Некоммерческая ассоциация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitFoundation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitFoundation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+        <rdfs:label>Некоммерческий фонд</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitPartnership -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitPartnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+        <rdfs:label>Некоммерческое партнерство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#OOO -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#OOO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Route -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Route">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"/>
+        <rdfs:label>Маршрут ОТ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Stop -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Stop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"/>
+        <rdfs:label>Остановка ОТ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Trip -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Trip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS"/>
+        <rdfs:label>Наряд ОТ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PassengerVehicle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PassengerVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"/>
+        <rdfs:label>Перевозчик пассажиров</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Pedestrian -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Pedestrian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Пешеходная зона</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov"/>
+        <rdfs:label>Президент</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentAdministration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentAdministration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentHumanRightsSovet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentHumanRightsSovet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ProsecutorOffice -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ProsecutorOffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Прокуратура</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicHeatingSystemObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicHeatingSystemObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"/>
+        <rdfs:label>Отопительная система</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicNotRegistered -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicNotRegistered">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicOrganization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+        <rdfs:label>Общественная организация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:label>Объект общественного транспорта</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicVehicle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Пассажирское транспортное средство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalAdministartion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalAdministartion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"/>
+        <rdfs:label>Администрация субъекта федерации</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody"/>
+        <rdfs:label>Региональный орган власти</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalMinistry -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalMinistry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"/>
+        <rdfs:label>Региональный исполнительный орган власти</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalParliament -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalParliament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov"/>
+        <rdfs:label>Парламент субъекта федерации</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Road -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Road">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Дорога</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadLane -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadLane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Полоса движения</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadNetworkObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadNetworkObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject"/>
+        <rdfs:label>Улично дорожная сеть</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#SmallArchitecrure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#SmallArchitecrure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement"/>
+        <rdfs:label>МАФ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#StateOrganization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#StateOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Бюджетное учреждение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TallMultyApt -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TallMultyApt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"/>
+        <rdfs:label>Высотное жилое строение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TemporalBuilding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TemporalBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"/>
+        <rdfs:label>Временное сооружение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Territory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Territory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit"/>
+        <rdfs:label>Иная территория</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Townhouse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Townhouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TrafficLight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TrafficLight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject"/>
+        <rdfs:label>Светофор</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Tree -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject"/>
+        <rdfs:label>Зеленое насаждение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TruckVehicle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TruckVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject"/>
+        <rdfs:label>Грузовой автомобиль</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ZAO -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ZAO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject"/>
+        <rdfs:label>Территориальная зона</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent">
+        <rdfs:comment>The Agent class is the class of agents; things that do stuff.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Agent</rdfs:isDefinedBy>
+        <rdfs:label>Агент</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:comment>Объект, обозначаемый площадью на карте (например, здание или парк).</rdfs:comment>
+        <rdfs:label>Площадной объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization"/>
+        <rdfs:label>АНО</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#CommercialObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#CommercialObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Коммерческий объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#CulturalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#CulturalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Культурный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Образовательный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#EnergeticObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#EnergeticObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:label>Энергетический объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"/>
+        <rdfs:label>Коммерческая организация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject">
+        <rdfs:comment>Описание функций физического объекта</rdfs:comment>
+        <rdfs:label>Функциональный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry">
+        <rdfs:label>Геометрия</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"/>
+        <rdfs:label>Государственная организация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority"/>
+        <rdfs:label>Орган власти</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#GreenObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#GreenObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject"/>
+        <rdfs:label>Зелёный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"/>
+        <rdfs:comment>The Group class represents a collection of individual agents.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Group</rdfs:isDefinedBy>
+        <rdfs:label>Группа</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#MedicalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#MedicalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Медицинский объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:comment>Объект, который не имеет фиксированного места (например, транспорт или движимая уличная фурнитура).</rdfs:comment>
+        <rdfs:label>Движимый объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:comment>Объект живой природы (например, зелёное насаждение)</rdfs:comment>
+        <rdfs:label>Природный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:comment>Объект, обозначаемый на карте линией или сетью линий (например, дорога или система водоснабжения)</rdfs:comment>
+        <rdfs:label>Сетевой объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization"/>
+        <rdfs:label>Некоммерческая организация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"/>
+        <rdfs:comment>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Organization</rdfs:isDefinedBy>
+        <rdfs:label>Организация</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent"/>
+        <rdfs:comment>The Person class represents people.</rdfs:comment>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Person</rdfs:isDefinedBy>
+        <rdfs:label>Человек</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject">
+        <rdfs:comment>Класс городских сущностей. Сюда помещаются конкретные физические объекты (например, здание), которые связываются с функциями (например, университет), координатами и управляющими ими организациями (например, Университет ИТМО).</rdfs:comment>
+        <rdfs:label>Физический объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject"/>
+        <rdfs:label>Объект, обозначаемый на карте точкой (например, памятник или остановочный павильон)</rdfs:label>
+        <rdfs:label>Точечный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Общественный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicPowerSystemObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicPowerSystemObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"/>
+        <rdfs:label>Электросетевая система</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSewerageSystemObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSewerageSystemObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"/>
+        <rdfs:label>Канализационная система</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject"/>
+        <rdfs:label>Коммунальная система</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicWaterSystemObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicWaterSystemObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject"/>
+        <rdfs:label>Система водоснабжения</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#RecreationalObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#RecreationalObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Рекреационный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Reference -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Reference">
+        <rdfs:label>Справочник</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ReligiousObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ReligiousObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Религиозный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group"/>
+        <rdfs:comment>Описание групп населения в базе данных</rdfs:comment>
+        <rdfs:label>Социальная группа населения</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject"/>
+        <rdfs:comment>Объект, несущий функцию обеспечения населения города любыми сервисами (например, школа или музей)</rdfs:comment>
+        <rdfs:label>Социальный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#SportsObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SportsObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject"/>
+        <rdfs:label>Спортивный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#WaterObject -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#WaterObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject"/>
+        <rdfs:label>Водный объект</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/icity/LBCSv2/Museum -->
+
+
+    <owl:NamedIndividual rdf:about="http://ontology.eil.utoronto.ca/icity/LBCSv2/Museum"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Disabled -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Disabled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledMovement -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledMovement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledSight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledSight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#EarlyChildhood -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#EarlyChildhood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Infant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Infant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Military -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Military">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentWithInfant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentWithInfant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithEarlyChildhood -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithEarlyChildhood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPreschooler -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPreschooler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPrimarySchoolAge -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPrimarySchoolAge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Pregnant -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Pregnant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Preschooler -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Preschooler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#PrimarySchoolAge -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#PrimarySchoolAge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Senior -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Senior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Student -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Student">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#TechnoparkITMO -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#TechnoparkITMO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building"/>
+        <city-data-conceptual:hasFunction rdf:resource="http://ontology.eil.utoronto.ca/icity/LBCSv2/Museum"/>
+        <city-data-conceptual:hasManagingOrganization rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Teenager -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Teenager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#Tween -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#Tween">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#University -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/city-data-conceptual#WorkingPopulation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/city-data-conceptual#WorkingPopulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

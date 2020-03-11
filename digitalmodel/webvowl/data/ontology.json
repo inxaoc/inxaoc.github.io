@@ -1,0 +1,2332 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/user/ontologies/city-data-conceptual", "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentBody",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GovernmentBody",
+      "undefined" : "Орган власти"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NonProfitOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonProfitOrganization",
+      "undefined" : "Некоммерческая организация"
+    },
+    "subClasses" : [ "7", "8", "9", "10", "11", "12", "13" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Building",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building",
+      "undefined" : "Сооружение"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#TechnoparkITMO",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "TechnoparkITMO"
+      }
+    } ],
+    "subClasses" : [ "19", "20", "21" ],
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PassengerVehicle",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassengerVehicle",
+      "undefined" : "Перевозчик пассажиров"
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AutonomousOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AutonomousOrganization",
+      "undefined" : "АНО"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ITMOUniversity",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "ITMOUniversity"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GTFS",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GTFS"
+    },
+    "subClasses" : [ "26", "27", "28" ],
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GreenObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GreenObject",
+      "undefined" : "Зелёный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PointObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointObject",
+      "undefined" : "Объект, обозначаемый на карте точкой (например, памятник или остановочный павильон)"
+    },
+    "subClasses" : [ "32", "33" ],
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#OOO",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OOO"
+    },
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadLane",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadLane",
+      "undefined" : "Полоса движения"
+    },
+    "id" : "36",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ReligiousObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ReligiousObject",
+      "undefined" : "Религиозный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalParliament",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalParliament",
+      "undefined" : "Парламент субъекта федерации"
+    },
+    "id" : "39",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NatureObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NatureObject",
+      "undefined" : "Природный объект"
+    },
+    "subClasses" : [ "29", "41" ],
+    "comment" : {
+      "undefined" : "Объект живой природы (например, зелёное насаждение)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicNotRegistered",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicNotRegistered"
+    },
+    "id" : "8",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MovableObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MovableObject",
+      "undefined" : "Движимый объект"
+    },
+    "subClasses" : [ "42", "43", "22" ],
+    "comment" : {
+      "undefined" : "Объект, который не имеет фиксированного места (например, транспорт или движимая уличная фурнитура)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TrafficLight",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrafficLight",
+      "undefined" : "Светофор"
+    },
+    "id" : "44",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicPowerSystemObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicPowerSystemObject",
+      "undefined" : "Электросетевая система"
+    },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TallMultyApt",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TallMultyApt",
+      "undefined" : "Высотное жилое строение"
+    },
+    "id" : "47",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialGroup",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialGroup",
+      "undefined" : "Социальная группа населения"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledSight",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "DisabledSight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Infant",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Infant"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Disabled",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Disabled"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Tween",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Tween"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Military",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Military"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Preschooler",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Preschooler"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithEarlyChildhood",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "ParentsWithEarlyChildhood"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#WorkingPopulation",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "WorkingPopulation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#DisabledMovement",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "DisabledMovement"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPreschooler",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "ParentsWithPreschooler"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EarlyChildhood",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "EarlyChildhood"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Student",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Student"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentWithInfant",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "ParentWithInfant"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Teenager",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Teenager"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ParentsWithPrimarySchoolAge",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "ParentsWithPrimarySchoolAge"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Pregnant",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Pregnant"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Senior",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "Senior"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PrimarySchoolAge",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "PrimarySchoolAge"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Описание групп населения в базе данных"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49",
+    "superClasses" : [ "50" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#NetObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetObject",
+      "undefined" : "Сетевой объект"
+    },
+    "subClasses" : [ "46", "52" ],
+    "comment" : {
+      "undefined" : "Объект, обозначаемый на карте линией или сетью линий (например, дорога или система водоснабжения)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#WaterObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaterObject",
+      "undefined" : "Водный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicOrganization",
+      "undefined" : "Общественная организация"
+    },
+    "id" : "10",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Group",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Group",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Group",
+      "undefined" : "Группа"
+    },
+    "subClasses" : [ "49" ],
+    "comment" : {
+      "undefined" : "The Group class represents a collection of individual agents."
+    },
+    "attributes" : [ "external" ],
+    "id" : "50",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicWaterSystemObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicWaterSystemObject",
+      "undefined" : "Система водоснабжения"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalMinistry",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalMinistry",
+      "undefined" : "Региональный исполнительный орган власти"
+    },
+    "id" : "55",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitPartnership",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonProfitPartnership",
+      "undefined" : "Некоммерческое партнерство"
+    },
+    "id" : "12",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CarVehicle",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarVehicle",
+      "undefined" : "Легковой автомобиль"
+    },
+    "id" : "43",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#StateOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateOrganization",
+      "undefined" : "Бюджетное учреждение"
+    },
+    "id" : "58",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalGov",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalGov",
+      "undefined" : "Региональный орган власти"
+    },
+    "subClasses" : [ "59", "39", "55" ],
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AchitectureElement",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AchitectureElement",
+      "undefined" : "Элемент благоустройства"
+    },
+    "subClasses" : [ "60" ],
+    "id" : "32",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSystemObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicSystemObject",
+      "undefined" : "Коммунальная система"
+    },
+    "subClasses" : [ "45", "61", "54", "62" ],
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Tree",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tree",
+      "undefined" : "Зеленое насаждение"
+    },
+    "id" : "33",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#GovCorporation",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GovCorporation",
+      "undefined" : "Госкорпорация"
+    },
+    "id" : "63",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CharityFoundation",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharityFoundation"
+    },
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Economic",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Economic"
+    },
+    "comment" : {
+      "undefined" : "Экономический"
+    },
+    "id" : "64",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitFoundation",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonProfitFoundation",
+      "undefined" : "Некоммерческий фонд"
+    },
+    "id" : "9",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RoadNetworkObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoadNetworkObject",
+      "undefined" : "Улично дорожная сеть"
+    },
+    "id" : "52",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Garage",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Garage",
+      "undefined" : "Гараж"
+    },
+    "id" : "21",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Trip",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PT_Trip",
+      "undefined" : "Наряд ОТ"
+    },
+    "id" : "26",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ZAO",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZAO"
+    },
+    "id" : "65",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#CommercialObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommercialObject",
+      "undefined" : "Коммерческий объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "66",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#President",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "President",
+      "undefined" : "Президент"
+    },
+    "subClasses" : [ "68", "69" ],
+    "id" : "67",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGovernment",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FederalGovernment",
+      "undefined" : "Правительство РФ"
+    },
+    "id" : "70",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunicipalGov",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MunicipalGov",
+      "undefined" : "Муниципальный орга власти"
+    },
+    "subClasses" : [ "71", "72" ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#SmallArchitecrure",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmallArchitecrure",
+      "undefined" : "МАФ"
+    },
+    "id" : "60",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AreaObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AreaObject",
+      "undefined" : "Площадной объект"
+    },
+    "subClasses" : [ "17", "73" ],
+    "comment" : {
+      "undefined" : "Объект, обозначаемый площадью на карте (например, здание или парк)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Land",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Land",
+      "undefined" : "Земельный участок"
+    },
+    "id" : "74",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Stop",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PT_Stop",
+      "undefined" : "Остановка ОТ"
+    },
+    "id" : "27",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicSewerageSystemObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicSewerageSystemObject",
+      "undefined" : "Канализационная система"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#NonProfitAssociation",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonProfitAssociation",
+      "undefined" : "Некоммерческая ассоциация"
+    },
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#AO",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AO"
+    },
+    "id" : "75",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PublicObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicObject",
+      "undefined" : "Общественный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#RegionalAdministartion",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionalAdministartion",
+      "undefined" : "Администрация субъекта федерации"
+    },
+    "id" : "59",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SportsObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsObject",
+      "undefined" : "Спортивный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#MedicalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalObject",
+      "undefined" : "Медицинский объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#AdministrativeUnit",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdministrativeUnit",
+      "undefined" : "Территориальная зона"
+    },
+    "subClasses" : [ "90", "74" ],
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EducationalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EducationalObject",
+      "undefined" : "Образовательный объект"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#University",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+      "labels" : {
+        "IRI-based" : "University"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#ForProfitOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ForProfitOrganization",
+      "undefined" : "Коммерческая организация"
+    },
+    "subClasses" : [ "34", "75", "88", "65" ],
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Road",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Road",
+      "undefined" : "Дорога"
+    },
+    "id" : "94",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#FunctionalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FunctionalObject",
+      "undefined" : "Функциональный объект"
+    },
+    "subClasses" : [ "64", "85", "38", "25", "30", "48" ],
+    "comment" : {
+      "undefined" : "Описание функций физического объекта"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Living",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Living",
+      "undefined" : "Жилой объект"
+    },
+    "subClasses" : [ "102", "103", "47", "104", "105" ],
+    "id" : "48",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunAdministration",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MunAdministration",
+      "undefined" : "Муниципальная администрация"
+    },
+    "id" : "71",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#SocialObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialObject",
+      "undefined" : "Социальный объект"
+    },
+    "subClasses" : [ "93", "114", "78", "37", "66", "115", "86", "76" ],
+    "comment" : {
+      "undefined" : "Объект, несущий функцию обеспечения населения города любыми сервисами (например, школа или музей)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Agent",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Агент"
+    },
+    "subClasses" : [ "116", "50", "6" ],
+    "comment" : {
+      "undefined" : "The Agent class is the class of agents; things that do stuff."
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicVehicle",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicVehicle",
+      "undefined" : "Пассажирское транспортное средство"
+    },
+    "id" : "117",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#CulturalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalObject",
+      "undefined" : "Культурный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalAgency",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FederalAgency",
+      "undefined" : "Федеральное агенство"
+    },
+    "id" : "118",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PT_Route",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PT_Route",
+      "undefined" : "Маршрут ОТ"
+    },
+    "id" : "28",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#KU_state",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KU_state",
+      "undefined" : "Казенное учреждение"
+    },
+    "id" : "119",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TruckVehicle",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TruckVehicle",
+      "undefined" : "Грузовой автомобиль"
+    },
+    "id" : "42",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#GovernmentAuthority",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GovernmentAuthority",
+      "undefined" : "Государственная организация"
+    },
+    "subClasses" : [ "112", "119", "0", "120", "58", "63" ],
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Crosswalk",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Crosswalk",
+      "undefined" : "Пешеходный переход"
+    },
+    "id" : "130",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalGov",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FederalGov",
+      "undefined" : "Федеральный орга власти"
+    },
+    "subClasses" : [ "67", "118", "132", "70" ],
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CapitalConstruction",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CapitalConstruction",
+      "undefined" : "Объект капитального строительства"
+    },
+    "id" : "19",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Organization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Organization",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Организация"
+    },
+    "subClasses" : [ "35", "1", "5" ],
+    "comment" : {
+      "undefined" : "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Geometry",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Geometry",
+      "undefined" : "Геометрия"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Reference",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference",
+      "undefined" : "Справочник"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#EnergeticObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnergeticObject",
+      "undefined" : "Энергетический объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Pedestrian",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pedestrian",
+      "undefined" : "Пешеходная зона"
+    },
+    "id" : "149",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#TemporalBuilding",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalBuilding",
+      "undefined" : "Временное сооружение"
+    },
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#FederalMinistry",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FederalMinistry",
+      "undefined" : "Федеральное министерство"
+    },
+    "id" : "132",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#CentralBank",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CentralBank",
+      "undefined" : "Центральный банк"
+    },
+    "id" : "112",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Apartment",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Apartment",
+      "undefined" : "Квартира"
+    },
+    "id" : "104",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicHeatingSystemObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicHeatingSystemObject",
+      "undefined" : "Отопительная система"
+    },
+    "id" : "61",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MultyAptHouse",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MultyAptHouse",
+      "undefined" : "Многоквартирный дом"
+    },
+    "id" : "102",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#PhysicalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalObject",
+      "undefined" : "Физический объект"
+    },
+    "subClasses" : [ "18", "31", "51", "23" ],
+    "comment" : {
+      "undefined" : "Класс городских сущностей. Сюда помещаются конкретные физические объекты (например, здание), которые связываются с функциями (например, университет), координатами и управляющими ими организациями (например, Университет ИТМО)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Townhouse",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Townhouse"
+    },
+    "id" : "103",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#ProsecutorOffice",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProsecutorOffice",
+      "undefined" : "Прокуратура"
+    },
+    "id" : "120",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#Person",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/spec/#term_Person",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Человек"
+    },
+    "comment" : {
+      "undefined" : "The Person class represents people."
+    },
+    "attributes" : [ "external" ],
+    "id" : "116",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#RecreationalObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecreationalObject",
+      "undefined" : "Рекреационный объект"
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#MunDepSovet",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MunDepSovet",
+      "undefined" : "Совет муниципальных депутатов"
+    },
+    "id" : "72",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentAdministration",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PresidentAdministration"
+    },
+    "id" : "68",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#Territory",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Territory",
+      "undefined" : "Иная территория"
+    },
+    "id" : "90",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#House",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "House",
+      "undefined" : "Частный дом"
+    },
+    "id" : "105",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#IP",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IP"
+    },
+    "id" : "88",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PublicTransportationObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicTransportationObject",
+      "undefined" : "Объект общественного транспорта"
+    },
+    "subClasses" : [ "36", "130", "117", "149", "94", "24", "44" ],
+    "id" : "25",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103#PresidentHumanRightsSovet",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2020/1/untitled-ontology-103",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PresidentHumanRightsSovet"
+    },
+    "id" : "69",
+    "superClasses" : [ "67" ]
+  } ],
+  "property" : [ {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasGeometry",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasGeometry"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasSocialGroupPercentage",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasSocialGroupPercentage"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "56"
+  }, {
+    "range" : "40",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "40",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "79"
+  }, {
+    "range" : "40",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "40",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "31",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "40",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "40",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "35",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "35",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "31",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "35",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "73",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "73",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "17",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "24",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "24",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasFunction",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasFunction"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "23",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "range" : "1",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "53",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "range" : "53",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "23",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "53",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "38",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "38",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "38",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "38",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "38",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "38",
+    "domain" : "114",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "48",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "48",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "38",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "48",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "30",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "48",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "48",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "32",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "46",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasManagingOrganization",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasManagingOrganization"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "46",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "3",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual#hasNestedObject",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/city-data-conceptual",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasNestedObject"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "3",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "3",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "51",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "50",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "51",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "4",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "4",
+    "domain" : "132",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "4",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "1",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "4",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "1",
+    "domain" : "119",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "1",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "1",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "25",
+    "domain" : "94",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "25",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "25",
+    "domain" : "130",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "25",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "25",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "25",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "2",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "2",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "18",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "67",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "15",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "15",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "46",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "15",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "15",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  } ]
+}
